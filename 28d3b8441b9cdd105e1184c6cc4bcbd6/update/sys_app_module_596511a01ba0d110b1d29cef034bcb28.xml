@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Rental Service">3064f8441b9cdd105e1184c6cc4bcb12</application>
+        <assessment/>
+        <device_type/>
+        <filter table="x_tigar_rental_ser_rental_request">requested_forDYNAMIC90d1921e5f510100a9ad2572f2b477fe^EQ<item endquery="false" field="requested_for" goto="false" newquery="false" operator="DYNAMIC" or="false" value="90d1921e5f510100a9ad2572f2b477fe"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>My Request</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_tigar_rental_ser_rental_request</name>
+        <order>3</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_tigar_rental_ser.rental service user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-04 07:59:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>596511a01ba0d110b1d29cef034bcb28</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>My Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sys_app_module_596511a01ba0d110b1d29cef034bcb28</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-05 01:36:16</sys_updated_on>
+        <timeline_page/>
+        <title>My Request</title>
+        <uncancelable>false</uncancelable>
+        <view_name>ess</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>

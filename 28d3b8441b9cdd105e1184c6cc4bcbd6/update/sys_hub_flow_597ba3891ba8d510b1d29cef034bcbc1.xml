@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Set state field 'ready to pick up' to 'complete'</description>
+        <internal_name>rental_service_complete_flow</internal_name>
+        <label_cache>[{"name":"bc6ab34d-396d-4032-b371-fe4fcb3075cf.state","label":"1 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"bc6ab34d-396d-4032-b371-fe4fcb3075cf.__action_status__","label":"1 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"bc6ab34d-396d-4032-b371-fe4fcb3075cf.__dont_treat_as_error__","label":"1 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{}},{"name":"6a9154ae-1a5b-454f-8748-1b096f4d2ed9.total_duration","label":"1 - Wait for a duration of time➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"6a9154ae-1a5b-454f-8748-1b096f4d2ed9.scheduled_end_date_time","label":"1 - Wait for a duration of time➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.record","label":"3 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.table_name","label":"3 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Rental Request Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_tigar_rental_ser_rental_request","column_name":"state","choices":[{"label":"Requested","used":false,"rawLabel":"Requested","image":"","missing":false,"selected":false,"reference":false,"value":"1","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Waiting Approval","used":false,"rawLabel":"Waiting Approval","image":"","missing":false,"selected":false,"reference":false,"value":"2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Approved","used":false,"rawLabel":"Approved","image":"","missing":false,"selected":false,"reference":false,"value":"3","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Prepare","used":false,"rawLabel":"Prepare","image":"","missing":false,"selected":false,"reference":false,"value":"4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Post Deployment","used":false,"rawLabel":"Post Deployment","image":"","missing":false,"selected":false,"reference":false,"value":"5","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Ready for Pick up","used":false,"rawLabel":"Ready for Pick up","image":"","missing":false,"selected":false,"reference":false,"value":"6","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Complete","used":false,"rawLabel":"Complete","image":"","missing":false,"selected":false,"reference":false,"value":"10","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Delay","used":false,"rawLabel":"Delay","image":"","missing":false,"selected":false,"reference":false,"value":"-4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Refused Approval","used":false,"rawLabel":"Refused Approval","image":"","missing":false,"selected":false,"reference":false,"value":"-2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Closed","used":false,"rawLabel":"Closed","image":"","missing":false,"selected":false,"reference":false,"value":"-7","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Hold","used":false,"rawLabel":"Hold","image":"","missing":false,"selected":false,"reference":false,"value":"-101","parameters":{"name":"x_tigar_rental_ser_rental_request"}}]}]</label_cache>
+        <master_snapshot>eecda3cd1ba8d510b1d29cef034bcb1e</master_snapshot>
+        <name>Rental Service Complete Flow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>fd7af4cf1b241550b1d29cef034bcb47</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:08:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>597ba3891ba8d510b1d29cef034bcbc1</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Rental Service Complete Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sys_hub_flow_597ba3891ba8d510b1d29cef034bcbc1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_tigar_rental_ser_rental_request">state=6<item display_value="Ready for Pick up" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="6"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 00:22:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fd7af4cf1b241550b1d29cef034bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:50</sys_updated_on>
+        <table>x_tigar_rental_ser_rental_request</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"797af4cf1b241550b1d29cef034bcb48","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>597ba3891ba8d510b1d29cef034bcbc1</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 00:22:50</sys_created_on>
+        <sys_id>797af4cf1b241550b1d29cef034bcb48</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:50</sys_updated_on>
+        <trigger display_value="">fd7af4cf1b241550b1d29cef034bcb47</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>797af4cf1b241550b1d29cef034bcb48</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-12 00:22:50</sys_created_on>
+        <sys_id>317af4cf1b241550b1d29cef034bcb49</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT IN797af4cf1b241550b1d29cef034bcb48"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT INc08da78d1ba8d510b1d29cef034bcbc1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>요청 상태가 Ready for Pick up 일 때</comment>
+        <display_text/>
+        <flow display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>c08da78d1ba8d510b1d29cef034bcbc1</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c08da78d1ba8d510b1d29cef034bcbc1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c08da78d1ba8d510b1d29cef034bcbc1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>448da78d1ba8d510b1d29cef034bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:12</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>c08da78d1ba8d510b1d29cef034bcbc1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>888da78d1ba8d510b1d29cef034bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:12</sys_updated_on>
+        <value>state=6</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=c08da78d1ba8d510b1d29cef034bcbc1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT IN6d7ba3891ba8d510b1d29cef034bcbc3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>597ba3891ba8d510b1d29cef034bcbc1</id>
+        <name>Rental Service Complete Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:08:17</sys_created_on>
+        <sys_id>6d7ba3891ba8d510b1d29cef034bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:08:17</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6d7ba3891ba8d510b1d29cef034bcbc3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT IN408da78d1ba8d510b1d29cef034bcbaf,b77da78d1ba8d510b1d29cef034bcba5,c08da78d1ba8d510b1d29cef034bcbab"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</model>
+        <model_id>597ba3891ba8d510b1d29cef034bcbc1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>408da78d1ba8d510b1d29cef034bcbaf</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</model>
+        <model_id>597ba3891ba8d510b1d29cef034bcbc1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:11</sys_created_on>
+        <sys_id>b77da78d1ba8d510b1d29cef034bcba5</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD297ab4cf672415500ba11e857e52a8e0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</model>
+        <model_id>597ba3891ba8d510b1d29cef034bcbc1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>c08da78d1ba8d510b1d29cef034bcbab</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT IN588da78d1ba8d510b1d29cef034bcbe0"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>요청 상태를 Complete로 수정</comment>
+        <display_text/>
+        <flow display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</flow>
+        <order>3</order>
+        <parent_ui_id>0710efb6-9add-436b-b2d6-5c58fd3a552c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>588da78d1ba8d510b1d29cef034bcbe0</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <ui_id>cee05505-6a70-4f13-abfa-2b85f404936f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=588da78d1ba8d510b1d29cef034bcbe0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>588da78d1ba8d510b1d29cef034bcbe0</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>588da78d1ba8d510b1d29cef034bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:13</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>588da78d1ba8d510b1d29cef034bcbe0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>948da78d1ba8d510b1d29cef034bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:13</sys_updated_on>
+        <value>state=10</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=588da78d1ba8d510b1d29cef034bcbe0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>588da78d1ba8d510b1d29cef034bcbe0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>508da78d1ba8d510b1d29cef034bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>588da78d1ba8d510b1d29cef034bcbe0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>9c8da78d1ba8d510b1d29cef034bcbe2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>588da78d1ba8d510b1d29cef034bcbe0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>148da78d1ba8d510b1d29cef034bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=588da78d1ba8d510b1d29cef034bcbe0"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=588da78d1ba8d510b1d29cef034bcbe0"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT IN588da78d1ba8d510b1d29cef034bcbd9,c88da78d1ba8d510b1d29cef034bcbc5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">908da78d1ba8d510b1d29cef034bcbd9</block>
+        <comment>아직도 Ready for Pick up 이면</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>588da78d1ba8d510b1d29cef034bcbd9</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <ui_id>0710efb6-9add-436b-b2d6-5c58fd3a552c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=588da78d1ba8d510b1d29cef034bcbd9"/>
+    <sys_element_mapping action="delete_multiple" query="id=588da78d1ba8d510b1d29cef034bcbd9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>588da78d1ba8d510b1d29cef034bcbd9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>588da78d1ba8d510b1d29cef034bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=6</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=588da78d1ba8d510b1d29cef034bcbd9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=588da78d1ba8d510b1d29cef034bcbd9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4c8da78d1ba8d510b1d29cef034bcbc4</block>
+        <comment>7일 뒤</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>c88da78d1ba8d510b1d29cef034bcbc5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <ui_id>6a9154ae-1a5b-454f-8748-1b096f4d2ed9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c88da78d1ba8d510b1d29cef034bcbc5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c88da78d1ba8d510b1d29cef034bcbc5</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>988da78d1ba8d510b1d29cef034bcbd8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:38</sys_updated_on>
+        <value>1970-01-01 01:00:00</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c88da78d1ba8d510b1d29cef034bcbc5</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:13</sys_created_on>
+        <sys_id>d48da78d1ba8d510b1d29cef034bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:13</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=c88da78d1ba8d510b1d29cef034bcbc5"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c88da78d1ba8d510b1d29cef034bcbc5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c88da78d1ba8d510b1d29cef034bcbc5"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT IN808da78d1ba8d510b1d29cef034bcbaa,808da78d1ba8d510b1d29cef034bcbae,c88da78d1ba8d510b1d29cef034bcbb1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>808da78d1ba8d510b1d29cef034bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>808da78d1ba8d510b1d29cef034bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:17:12</sys_created_on>
+        <sys_id>c88da78d1ba8d510b1d29cef034bcbb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:17:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=597ba3891ba8d510b1d29cef034bcbc1^sys_idNOT IN27cd27cd1ba8d510b1d29cef034bcbeb"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"27cd27cd1ba8d510b1d29cef034bcbeb","name":"plan","plan_signature":null}}</plan>
+        <plan_id>597ba3891ba8d510b1d29cef034bcbc1</plan_id>
+        <snapshot>eecda3cd1ba8d510b1d29cef034bcb1e</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>27cd27cd1ba8d510b1d29cef034bcbeb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <trigger display_value="">fd7af4cf1b241550b1d29cef034bcb47</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=597ba3891ba8d510b1d29cef034bcbc1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Set state field 'ready to pick up' to 'complete'</description>
+        <internal_name>rental_service_complete_flow</internal_name>
+        <label_cache>[{"name":"bc6ab34d-396d-4032-b371-fe4fcb3075cf.state","label":"1 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"bc6ab34d-396d-4032-b371-fe4fcb3075cf.__action_status__","label":"1 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"bc6ab34d-396d-4032-b371-fe4fcb3075cf.__dont_treat_as_error__","label":"1 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{}},{"name":"6a9154ae-1a5b-454f-8748-1b096f4d2ed9.total_duration","label":"1 - Wait for a duration of time➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"6a9154ae-1a5b-454f-8748-1b096f4d2ed9.scheduled_end_date_time","label":"1 - Wait for a duration of time➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.record","label":"3 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.table_name","label":"3 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.__action_status__","label":"3 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cee05505-6a70-4f13-abfa-2b85f404936f.__dont_treat_as_error__","label":"3 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Updated_1.current.state","label":"Trigger - Record Updated➛Rental Request Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_tigar_rental_ser_rental_request","column_name":"state","choices":[{"label":"Requested","used":false,"rawLabel":"Requested","image":"","missing":false,"selected":false,"reference":false,"value":"1","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Waiting Approval","used":false,"rawLabel":"Waiting Approval","image":"","missing":false,"selected":false,"reference":false,"value":"2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Approved","used":false,"rawLabel":"Approved","image":"","missing":false,"selected":false,"reference":false,"value":"3","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Prepare","used":false,"rawLabel":"Prepare","image":"","missing":false,"selected":false,"reference":false,"value":"4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Post Deployment","used":false,"rawLabel":"Post Deployment","image":"","missing":false,"selected":false,"reference":false,"value":"5","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Ready for Pick up","used":false,"rawLabel":"Ready for Pick up","image":"","missing":false,"selected":false,"reference":false,"value":"6","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Complete","used":false,"rawLabel":"Complete","image":"","missing":false,"selected":false,"reference":false,"value":"10","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Delay","used":false,"rawLabel":"Delay","image":"","missing":false,"selected":false,"reference":false,"value":"-4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Refused Approval","used":false,"rawLabel":"Refused Approval","image":"","missing":false,"selected":false,"reference":false,"value":"-2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Closed","used":false,"rawLabel":"Closed","image":"","missing":false,"selected":false,"reference":false,"value":"-7","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Hold","used":false,"rawLabel":"Hold","image":"","missing":false,"selected":false,"reference":false,"value":"-101","parameters":{"name":"x_tigar_rental_ser_rental_request"}}]}]</label_cache>
+        <master>true</master>
+        <name>Rental Service Complete Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Rental Service Complete Flow">597ba3891ba8d510b1d29cef034bcbc1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>eecda3cd1ba8d510b1d29cef034bcb1e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=eecda3cd1ba8d510b1d29cef034bcb1e^sys_idNOT INd7cd27cd1ba8d510b1d29cef034bcb9c"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>요청 상태가 Ready for Pick up 일 때</comment>
+        <display_text/>
+        <flow display_value="Rental Service Complete Flow">eecda3cd1ba8d510b1d29cef034bcb1e</flow>
+        <name>Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>d7cd27cd1ba8d510b1d29cef034bcb9c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:51</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d7cd27cd1ba8d510b1d29cef034bcb9c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d7cd27cd1ba8d510b1d29cef034bcb9c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>17cd27cd1ba8d510b1d29cef034bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <value>state=6</value>
+        <variable display_value="Condition">bb9adea0c31322002841b63b12d3ae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d7cd27cd1ba8d510b1d29cef034bcb9c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>d7cd27cd1ba8d510b1d29cef034bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">1dda12e0c31322002841b63b12d3aea8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_bb695e60c31322002841b63b12d3aea5^id=d7cd27cd1ba8d510b1d29cef034bcb9c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=eecda3cd1ba8d510b1d29cef034bcb1e^sys_idNOT INaacda3cd1ba8d510b1d29cef034bcb20"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>eecda3cd1ba8d510b1d29cef034bcb1e</id>
+        <name>Rental Service Complete Flow</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:28</sys_created_on>
+        <sys_id>aacda3cd1ba8d510b1d29cef034bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=aacda3cd1ba8d510b1d29cef034bcb20"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=eecda3cd1ba8d510b1d29cef034bcb1e^sys_idNOT IN62cda3cd1ba8d510b1d29cef034bcb24,c3cd27cd1ba8d510b1d29cef034bcb6e,c7cd27cd1ba8d510b1d29cef034bcb65"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service Complete Flow">eecda3cd1ba8d510b1d29cef034bcb1e</model>
+        <model_id>eecda3cd1ba8d510b1d29cef034bcb1e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:28</sys_created_on>
+        <sys_id>62cda3cd1ba8d510b1d29cef034bcb24</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service Complete Flow">eecda3cd1ba8d510b1d29cef034bcb1e</model>
+        <model_id>eecda3cd1ba8d510b1d29cef034bcb1e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:30</sys_created_on>
+        <sys_id>c3cd27cd1ba8d510b1d29cef034bcb6e</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD297ab4cf672415500ba11e857e52a8e0,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Rental Service Complete Flow">eecda3cd1ba8d510b1d29cef034bcb1e</model>
+        <model_id>eecda3cd1ba8d510b1d29cef034bcb1e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:30</sys_created_on>
+        <sys_id>c7cd27cd1ba8d510b1d29cef034bcb65</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=eecda3cd1ba8d510b1d29cef034bcb1e^sys_idNOT IN1fcd27cd1ba8d510b1d29cef034bcb99"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>요청 상태를 Complete로 수정</comment>
+        <display_text/>
+        <flow display_value="Rental Service Complete Flow">eecda3cd1ba8d510b1d29cef034bcb1e</flow>
+        <order>3</order>
+        <parent_ui_id>0710efb6-9add-436b-b2d6-5c58fd3a552c</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>1fcd27cd1ba8d510b1d29cef034bcb99</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <ui_id>cee05505-6a70-4f13-abfa-2b85f404936f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1fcd27cd1ba8d510b1d29cef034bcb99"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1fcd27cd1ba8d510b1d29cef034bcb99</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>53cd27cd1ba8d510b1d29cef034bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1fcd27cd1ba8d510b1d29cef034bcb99</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>9fcd27cd1ba8d510b1d29cef034bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <value>state=10</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1fcd27cd1ba8d510b1d29cef034bcb99"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>1fcd27cd1ba8d510b1d29cef034bcb99</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>5bcd27cd1ba8d510b1d29cef034bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>1fcd27cd1ba8d510b1d29cef034bcb99</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>97cd27cd1ba8d510b1d29cef034bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>1fcd27cd1ba8d510b1d29cef034bcb99</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>1fcd27cd1ba8d510b1d29cef034bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1fcd27cd1ba8d510b1d29cef034bcb99"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1fcd27cd1ba8d510b1d29cef034bcb99"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=eecda3cd1ba8d510b1d29cef034bcb1e^sys_idNOT IN1bcd27cd1ba8d510b1d29cef034bcb83,4fcd27cd1ba8d510b1d29cef034bcb7a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">908da78d1ba8d510b1d29cef034bcbd9</block>
+        <comment>아직도 Ready for Pick up 이면</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Rental Service Complete Flow">eecda3cd1ba8d510b1d29cef034bcb1e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>1bcd27cd1ba8d510b1d29cef034bcb83</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <ui_id>0710efb6-9add-436b-b2d6-5c58fd3a552c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1bcd27cd1ba8d510b1d29cef034bcb83"/>
+    <sys_element_mapping action="delete_multiple" query="id=1bcd27cd1ba8d510b1d29cef034bcb83"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1bcd27cd1ba8d510b1d29cef034bcb83</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:31</sys_created_on>
+        <sys_id>5fcd27cd1ba8d510b1d29cef034bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{Updated_1.current.state}}=6</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1bcd27cd1ba8d510b1d29cef034bcb83"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1bcd27cd1ba8d510b1d29cef034bcb83"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4c8da78d1ba8d510b1d29cef034bcbc4</block>
+        <comment>7일 뒤</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Rental Service Complete Flow">eecda3cd1ba8d510b1d29cef034bcb1e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:30</sys_created_on>
+        <sys_id>4fcd27cd1ba8d510b1d29cef034bcb7a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <ui_id>6a9154ae-1a5b-454f-8748-1b096f4d2ed9</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4fcd27cd1ba8d510b1d29cef034bcb7a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4fcd27cd1ba8d510b1d29cef034bcb7a</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:30</sys_created_on>
+        <sys_id>17cd27cd1ba8d510b1d29cef034bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:30</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4fcd27cd1ba8d510b1d29cef034bcb7a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:30</sys_created_on>
+        <sys_id>1fcd27cd1ba8d510b1d29cef034bcb82</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-12 00:22:49</sys_updated_on>
+        <value>1970-01-01 01:00:00</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=4fcd27cd1ba8d510b1d29cef034bcb7a"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4fcd27cd1ba8d510b1d29cef034bcb7a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4fcd27cd1ba8d510b1d29cef034bcb7a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e^sys_idNOT IN83cd27cd1ba8d510b1d29cef034bcb73,8bcd27cd1ba8d510b1d29cef034bcb6a,8fcd27cd1ba8d510b1d29cef034bcb61"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:30</sys_created_on>
+        <sys_id>83cd27cd1ba8d510b1d29cef034bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:30</sys_created_on>
+        <sys_id>8bcd27cd1ba8d510b1d29cef034bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 08:18:29</sys_created_on>
+        <sys_id>8fcd27cd1ba8d510b1d29cef034bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:18:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_eecda3cd1ba8d510b1d29cef034bcb1e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>597ba3891ba8d510b1d29cef034bcbc1</sys_id>
+        <latest_snapshot>eecda3cd1ba8d510b1d29cef034bcb1e</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch4-05-25-2022_06-08-2022_0838.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

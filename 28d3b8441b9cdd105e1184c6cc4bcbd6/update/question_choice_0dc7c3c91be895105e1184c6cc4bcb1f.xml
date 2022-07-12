@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>1</order>
+        <published_ref display_value="Head office">b9b7c9541b9851505e1184c6cc4bcb19</published_ref>
+        <question display_value="Location to be used">89c783c91be895105e1184c6cc4bcbe9</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:32:20</sys_created_on>
+        <sys_id>0dc7c3c91be895105e1184c6cc4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Head office</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>question_choice_0dc7c3c91be895105e1184c6cc4bcb1f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:32:20</sys_updated_on>
+        <text>Head office</text>
+        <value>head_office</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=0dc7c3c91be895105e1184c6cc4bcb1f"/>
+</record_update>

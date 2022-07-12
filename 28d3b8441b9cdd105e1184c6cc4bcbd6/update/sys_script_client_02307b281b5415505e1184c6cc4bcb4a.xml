@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>end_date</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Set End date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	//종료 날짜는 시작 날짜보다 미래이어야 한다.
+	if(g_form.getValue('end_date') < g_form.getValue('start_date')){
+		g_form.showFieldMsg('end_date','종료 날짜는 시작 날짜보다 미래이어야 한다.', 'error');
+	}
+
+// 	//종료 날짜는 시작 날짜로부터 3년 이내이어야 한다.
+// 	var limit = g_form.getValue('start_date');
+// 	var gdtStartdate = g_form.getValue('start_date'); //Choose the field to add time from
+// 	var addtime = 3; //The amount of time to add
+// 	var addtype = 'year'; //The time type.   Can be day, week, month, year.
+	
+// 	g_form.showFieldMsg('end_date','start date : '+gdtStartdate, 'error');
+	
+// 	var ajax = new GlideAjax('ClientScriptDateUtils'); //ClientScriptDateUtils클래스의
+// 	ajax.addParam('sysparm_name', 'addDateTimeAmount');//addDateAmount함수 호출
+// 	ajax.addParam('sysparm_fdt', gdtStartdate);//오브젝트 전달
+// 	ajax.addParam('sysparm_addtime', addtime);//3 전달
+// 	//ajax.addParam('sysparm_addtype', addtype);//년 전달
+// 	ajax.getXML(doSomething);//xml로 응답 받기
+// 	//ajax.getXMLWait(doSomething); 동기화할 수 있으나 애플리케이션 범위에서는 불가능
+	
+	
+// 	function doSomething(response){
+// 		var answer = response.responseXML.documentElement.getAttribute("answer");
+// 		limit = answer;
+// 		jslog('Limit : ' + limit + 'doSomething');
+// 	}
+	
+// 	if (limit < g_form.getValue('end_date')) {
+// 		jslog('limit < end_date');
+// 		g_form.showFieldMsg('end_date','no way Limit', 'error');
+// 	}
+	
+// 	jslog('Limit : ' + limit + 'last');
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-22 08:58:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>02307b281b5415505e1184c6cc4bcb4a</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Set End date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sys_script_client_02307b281b5415505e1184c6cc4bcb4a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-01 07:50:38</sys_updated_on>
+        <table>x_tigar_rental_ser_rental_request</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

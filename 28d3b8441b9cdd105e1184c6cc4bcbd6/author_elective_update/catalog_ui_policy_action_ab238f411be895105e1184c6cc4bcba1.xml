@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Rental Request">91b705541b9851505e1184c6cc4bcbd4</catalog_item>
+        <catalog_variable>IO:b1b7c9541b9851505e1184c6cc4bcb1e</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:12:18</sys_created_on>
+        <sys_id>ab238f411be895105e1184c6cc4bcba1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>site_address</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_ab238f411be895105e1184c6cc4bcba1</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:18:40</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Site Address Variable set Visible and Mandatory">63238f411be895105e1184c6cc4bcb9c</ui_policy>
+        <variable>site_address</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</application>
+        <file_path/>
+        <instance_id>79ed97abdbd128588aea21c4059619a7</instance_id>
+        <instance_name>timegatecorpdemo1</instance_name>
+        <name>catalog_ui_policy_action_ab238f411be895105e1184c6cc4bcba1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Rental Request">91b705541b9851505e1184c6cc4bcbd4</catalog_item><catalog_variable>IO:b1b7c9541b9851505e1184c6cc4bcb1e</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>true</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-06 05:12:18</sys_created_on><sys_id>ab238f411be895105e1184c6cc4bcba1</sys_id><sys_mod_count>2</sys_mod_count><sys_name>site_address</sys_name><sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package><sys_policy/><sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope><sys_update_name>catalog_ui_policy_action_ab238f411be895105e1184c6cc4bcba1</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-07-06 05:18:40</sys_updated_on><table/><ui_policy display_value="Site Address Variable set Visible and Mandatory">63238f411be895105e1184c6cc4bcb9c</ui_policy><variable>site_address</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-331987174</payload_hash>
+        <record_name>site_address</record_name>
+        <reverted_from/>
+        <source>68d3b8441b9cdd105e1184c6cc4bcbd8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-06 05:18:40</sys_created_on>
+        <sys_id>bca48b051ba4d510b1d29cef034bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181d1f236540000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:18:40</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>b0a48b05efa4d510fe446da7c042a8d9</update_guid>
+        <update_guid_history>b0a48b05efa4d510fe446da7c042a8d9:-331987174,73238f415ce89510c1e079ee1aaed8b4:-1097964426,6b238f4133e89510aeb798d67ddcb2a5:-331987174</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="site_address">9f670f491ba4d510b1d29cef034bcb44</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-06 05:30:51</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>d1f12face4274a09ad4d0dd572c52759</sys_id>
+        <sys_metadata>ab238f411be895105e1184c6cc4bcba1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>site_address</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_ab238f411be895105e1184c6cc4bcba1</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_ab238f411be895105e1184c6cc4bcba1">bca48b051ba4d510b1d29cef034bcbd9</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:30:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

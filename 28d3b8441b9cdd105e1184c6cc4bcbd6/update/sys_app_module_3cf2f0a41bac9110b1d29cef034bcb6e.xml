@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Rental Service">3064f8441b9cdd105e1184c6cc4bcb12</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint>요청자의 로케이션 맵</hint>
+        <homepage/>
+        <image/>
+        <link_type>MAP</link_type>
+        <map_page display_value="x_tigar_rental_ser_Requested for Locatio">ba4f286c1b6c9110b1d29cef034bcb82</map_page>
+        <mobile_title>Requestor Locations</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>106</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_tigar_rental_ser.admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-04 05:26:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3cf2f0a41bac9110b1d29cef034bcb6e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Locations</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sys_app_module_3cf2f0a41bac9110b1d29cef034bcb6e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-04 07:43:21</sys_updated_on>
+        <timeline_page/>
+        <title>Locations</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

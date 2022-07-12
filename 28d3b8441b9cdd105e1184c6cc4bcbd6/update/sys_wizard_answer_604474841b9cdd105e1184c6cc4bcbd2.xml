@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New Rental Request</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Rental Request</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">381125d61b3001105e1184c6cc4bcbf6</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-20 05:58:14</sys_created_on>
+        <sys_id>604474841b9cdd105e1184c6cc4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rental Request</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sys_wizard_answer_604474841b9cdd105e1184c6cc4bcbd2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-20 05:58:14</sys_updated_on>
+        <table/>
+        <target_url>x_tigar_rental_ser_rental_request.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>

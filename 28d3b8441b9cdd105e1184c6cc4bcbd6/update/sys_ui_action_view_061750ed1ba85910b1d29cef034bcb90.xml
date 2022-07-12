@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_view">
+    <sys_ui_action_view action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 05:57:25</sys_created_on>
+        <sys_id>061750ed1ba85910b1d29cef034bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Arrived.Default view</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_ui_action display_value="&#8;Arrived">99745ca91ba85910b1d29cef034bcb74</sys_ui_action>
+        <sys_ui_view display_value="Default view" name="NULL">Default view</sys_ui_view>
+        <sys_update_name>sys_ui_action_view_061750ed1ba85910b1d29cef034bcb90</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 05:57:25</sys_updated_on>
+        <visibility>include</visibility>
+    </sys_ui_action_view>
+</record_update>

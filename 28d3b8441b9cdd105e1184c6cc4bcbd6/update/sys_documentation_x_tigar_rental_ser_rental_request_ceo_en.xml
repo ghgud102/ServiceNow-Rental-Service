@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="ceo" label="CEO" language="en" table="x_tigar_rental_ser_rental_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>ceo</element>
+            <help/>
+            <hint/>
+            <label>CEO</label>
+            <language>en</language>
+            <name>x_tigar_rental_ser_rental_request</name>
+            <plural>CEOs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-06-21 04:50:19</sys_created_on>
+            <sys_id>934e21141b9c51505e1184c6cc4bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CEO</sys_name>
+            <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+            <sys_update_name>sys_documentation_x_tigar_rental_ser_rental_request_ceo_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-06-21 04:50:19</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
