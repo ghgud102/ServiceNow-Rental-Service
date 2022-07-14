@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Rental Request" max_length="40" name="x_tigar_rental_ser_rental_request" sizeclass="16" type="collection">
-        <element label="CEO" max_length="40" name="ceo" type="boolean"/>
+    <element extends="task" label="Rental Request" max_length="40" name="x_tigar_rental_ser_rental_request" sizeclass="18" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Detailed Specification" max_length="40" name="detailed_specification" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
-        <element label="Head Manager" max_length="40" name="head_manager" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Item type" max_length="40" name="item_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Labtop" sequence="0" value="labtop"/>
@@ -17,19 +15,10 @@
                 <element inactive_on_update="false" label="Project Site" sequence="1" value="project_site"/>
             </choice>
         </element>
-        <element label="Management Support Team" max_length="40" name="management_support_team" type="boolean"/>
         <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="price" type="price"/>
         <element attributes="edge_encryption_enabled=true" label="Purpose" max_length="40" name="purpose" type="string"/>
         <element attributes="encode_utf8=false" label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Site address" max_length="40" name="site_address" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Start date" mandatory="true" max_length="40" name="start_date" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Stock" max_length="40" name="stock" type="string">
-            <choice>
-                <element inactive_on_update="false" label="Out of Stock" sequence="0" value="out_of_stock"/>
-                <element inactive_on_update="false" label="In Stock" sequence="1" value="in_stock"/>
-            </choice>
-        </element>
-        <element label="Team Manager" max_length="40" name="team_manager" type="boolean"/>
-        <element label="Vice President" max_length="40" name="vice_president" type="boolean"/>
     </element>
 </database>

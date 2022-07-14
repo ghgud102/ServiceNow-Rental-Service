@@ -37,11 +37,12 @@
         <message/>
         <message_html><![CDATA[<p>Dear ${assigned_to},</p>
 <p>&nbsp;</p>
-<p>아래 요청은 요청일 이후로 10일이 지났으며 승인 대기 상태 입니다.</p>
+<p>아래 요청은 요청 이후로 10일이 지났음에도 여전히 승인 대기 상태 입니다.</p>
+<p>&nbsp;</p>
 <p>요청: ${number}</p>
 <p>요청자: ${requested_for}</p>
 <p>상태: ${state}</p>
-<p>픔목: ${item_type}</p>
+<p>품목: ${item_type}</p>
 <p>사양: ${detailed_specification}</p>
 <p>비용: ${price}</p>]]></message_html>
         <message_list/>
@@ -65,7 +66,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9ba4cef01be815105e1184c6cc4bcbaf</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Remind Approver Email</sys_name>
         <sys_overrides/>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
@@ -73,7 +74,7 @@
         <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
         <sys_update_name>sysevent_email_action_9ba4cef01be815105e1184c6cc4bcbaf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-11 08:29:59</sys_updated_on>
+        <sys_updated_on>2022-07-13 05:50:26</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Employee notification template">1462e7ca918a3010f877b1d70a4d6a3d</template>
         <type>email</type>
