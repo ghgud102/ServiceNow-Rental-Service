@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Rental Requst Flow with Approval</description>
+        <internal_name>rental_service_with_approval</internal_name>
+        <label_cache>[{"name":"04b6527b-b2f6-4cbe-abac-156012b6b1b0.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"04b6527b-b2f6-4cbe-abac-156012b6b1b0.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"04b6527b-b2f6-4cbe-abac-156012b6b1b0.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.record","label":"1 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.table_name","label":"1 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.Record","label":"3 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.Table","label":"3 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.record","label":"7 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.table_name","label":"7 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8932f863-a3f4-4089-8428-605d5d8aa0e2.state","label":"4 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"8932f863-a3f4-4089-8428-605d5d8aa0e2.__action_status__","label":"4 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8932f863-a3f4-4089-8428-605d5d8aa0e2.__dont_treat_as_error__","label":"4 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.record","label":"7 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.table_name","label":"7 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9140f997-312b-4397-b535-e428a20907f1.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9140f997-312b-4397-b535-e428a20907f1.__action_status__","label":"6 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9140f997-312b-4397-b535-e428a20907f1.__dont_treat_as_error__","label":"6 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"ab618613-5ec1-4ddb-ae51-f554b1406f8c.state","label":"4 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"ab618613-5ec1-4ddb-ae51-f554b1406f8c.__action_status__","label":"4 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ab618613-5ec1-4ddb-ae51-f554b1406f8c.__dont_treat_as_error__","label":"4 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.record","label":"9 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.table_name","label":"9 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ce96f8f6-bbba-4c03-af90-d52f19c6ec9f.state","label":"9 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"ce96f8f6-bbba-4c03-af90-d52f19c6ec9f.__action_status__","label":"9 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ce96f8f6-bbba-4c03-af90-d52f19c6ec9f.__dont_treat_as_error__","label":"9 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.record","label":"10 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.table_name","label":"10 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0496cc13-946a-4656-a666-ee79df60fe1e.state","label":"9 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"0496cc13-946a-4656-a666-ee79df60fe1e.__action_status__","label":"9 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0496cc13-946a-4656-a666-ee79df60fe1e.__dont_treat_as_error__","label":"9 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.record","label":"12 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.table_name","label":"12 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4f0026de-38cc-4be2-a0da-409b93f76501.answer","label":"12 - Make a decision➛Answer","reference_display":"Answer","type":"document_id","base_type":"document_id","attributes":{}},{"name":"4f0026de-38cc-4be2-a0da-409b93f76501.table_name","label":"12 - Make a decision➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"Created or Updated_1.current.state","label":"Trigger - Record Created or Updated➛Rental Request Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_tigar_rental_ser_rental_request","column_name":"state","choices":[{"label":"Requested","used":false,"rawLabel":"Requested","image":"","missing":false,"selected":false,"reference":false,"value":"1","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Waiting Approval","used":false,"rawLabel":"Waiting Approval","image":"","missing":false,"selected":false,"reference":false,"value":"2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Approved","used":false,"rawLabel":"Approved","image":"","missing":false,"selected":false,"reference":false,"value":"3","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Prepare","used":false,"rawLabel":"Prepare","image":"","missing":false,"selected":false,"reference":false,"value":"4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Post Deployment","used":false,"rawLabel":"Post Deployment","image":"","missing":false,"selected":false,"reference":false,"value":"5","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Ready for Pick up","used":false,"rawLabel":"Ready for Pick up","image":"","missing":false,"selected":false,"reference":false,"value":"6","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Complete","used":false,"rawLabel":"Complete","image":"","missing":false,"selected":false,"reference":false,"value":"10","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Delay","used":false,"rawLabel":"Delay","image":"","missing":false,"selected":false,"reference":false,"value":"-4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Refused Approval","used":false,"rawLabel":"Refused Approval","image":"","missing":false,"selected":false,"reference":false,"value":"-2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Closed","used":false,"rawLabel":"Closed","image":"","missing":false,"selected":false,"reference":false,"value":"-7","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Hold","used":false,"rawLabel":"Hold","image":"","missing":false,"selected":false,"reference":false,"value":"-101","parameters":{"name":"x_tigar_rental_ser_rental_request"}}]},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.record","label":"13 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.table_name","label":"13 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d8255f16-ee1e-4373-920e-c0ad1dbec936.__action_status__","label":"3 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8255f16-ee1e-4373-920e-c0ad1dbec936.__dont_treat_as_error__","label":"3 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c43d44a8-e33f-4cab-a09a-87b0b599aca5.__action_status__","label":"4 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c43d44a8-e33f-4cab-a09a-87b0b599aca5.__dont_treat_as_error__","label":"4 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9af7a961-1d1b-47c9-93f5-426bf680376f.__action_status__","label":"4 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9af7a961-1d1b-47c9-93f5-426bf680376f.__dont_treat_as_error__","label":"4 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07cd8b63-fe12-49f9-a75e-c5ab22823bac.__action_status__","label":"9 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07cd8b63-fe12-49f9-a75e-c5ab22823bac.__dont_treat_as_error__","label":"9 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.record.state","label":"1 - Update Record➛Rental Request Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_tigar_rental_ser_rental_request","column_name":"state","choices":[{"label":"Requested","used":false,"rawLabel":"Requested","image":"","missing":false,"selected":false,"reference":false,"value":"1","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Waiting Approval","used":false,"rawLabel":"Waiting Approval","image":"","missing":false,"selected":false,"reference":false,"value":"2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Approved","used":false,"rawLabel":"Approved","image":"","missing":false,"selected":false,"reference":false,"value":"3","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Prepare","used":false,"rawLabel":"Prepare","image":"","missing":false,"selected":false,"reference":false,"value":"4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Post Deployment","used":false,"rawLabel":"Post Deployment","image":"","missing":false,"selected":false,"reference":false,"value":"5","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Ready for Pick up","used":false,"rawLabel":"Ready for Pick up","image":"","missing":false,"selected":false,"reference":false,"value":"6","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Complete","used":false,"rawLabel":"Complete","image":"","missing":false,"selected":false,"reference":false,"value":"10","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Delay","used":false,"rawLabel":"Delay","image":"","missing":false,"selected":false,"reference":false,"value":"-4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Refused Approval","used":false,"rawLabel":"Refused Approval","image":"","missing":false,"selected":false,"reference":false,"value":"-2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Closed","used":false,"rawLabel":"Closed","image":"","missing":false,"selected":false,"reference":false,"value":"-7","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Hold","used":false,"rawLabel":"Hold","image":"","missing":false,"selected":false,"reference":false,"value":"-101","parameters":{"name":"x_tigar_rental_ser_rental_request"}}]}]</label_cache>
+        <master_snapshot>afcbfd981bdc51505e1184c6cc4bcb1d</master_snapshot>
+        <name>Rental Service with Approval</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>09ac9fd31b60d550b1d29cef034bcbb0</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:39:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bb89f5941bdc51505e1184c6cc4bcbf3</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Rental Service with Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sys_hub_flow_bb89f5941bdc51505e1184c6cc4bcbf3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:53</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_tigar_rental_ser_rental_request">state=1^price&gt;2000<item display_value="Requested" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item endquery="false" field="price" goto="false" newquery="false" operator="&gt;" or="false" value="2000"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-13 06:49:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>09ac9fd31b60d550b1d29cef034bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <table>x_tigar_rental_ser_rental_request</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"8dac9fd31b60d550b1d29cef034bcbb0","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>bb89f5941bdc51505e1184c6cc4bcbf3</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-13 06:49:52</sys_created_on>
+        <sys_id>8dac9fd31b60d550b1d29cef034bcbb0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <trigger display_value="">09ac9fd31b60d550b1d29cef034bcbb0</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>8dac9fd31b60d550b1d29cef034bcbb0</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-13 06:49:52</sys_created_on>
+        <sys_id>41ac9fd31b60d550b1d29cef034bcbb1</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=bb89f5941bdc51505e1184c6cc4bcbf3^sys_idNOT IN8dac9fd31b60d550b1d29cef034bcbb0"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=bb89f5941bdc51505e1184c6cc4bcbf3^sys_idNOT INaccb3d981bdc51505e1184c6cc4bcbb1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>2000달러 이상의 물품이 요청된 경우</comment>
+        <display_text/>
+        <flow display_value="Rental Service with Approval">bb89f5941bdc51505e1184c6cc4bcbf3</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>accb3d981bdc51505e1184c6cc4bcbb1</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=accb3d981bdc51505e1184c6cc4bcbb1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>accb3d981bdc51505e1184c6cc4bcbb1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>60cb3d981bdc51505e1184c6cc4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:07</sys_updated_on>
+        <value>state=1^price&gt;2000</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>accb3d981bdc51505e1184c6cc4bcbb1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>b8cb3d981bdc51505e1184c6cc4bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:07</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>accb3d981bdc51505e1184c6cc4bcbb1</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 07:57:30</sys_created_on>
+        <sys_id>d9923ced1b6c5910b1d29cef034bcb0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 07:57:30</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=accb3d981bdc51505e1184c6cc4bcbb1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bb89f5941bdc51505e1184c6cc4bcbf3^sys_idNOT IN3b89f5941bdc51505e1184c6cc4bcbf4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bb89f5941bdc51505e1184c6cc4bcbf3</id>
+        <name>Rental Service with Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:39:30</sys_created_on>
+        <sys_id>3b89f5941bdc51505e1184c6cc4bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:39:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3b89f5941bdc51505e1184c6cc4bcbf4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=bb89f5941bdc51505e1184c6cc4bcbf3^sys_idNOT IN24cb3d981bdc51505e1184c6cc4bcba8,a0cb3d981bdc51505e1184c6cc4bcbac,e4cb3d981bdc51505e1184c6cc4bcba3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD74ac9fd3e160d550283ed39d7b9d297e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Rental Service with Approval">bb89f5941bdc51505e1184c6cc4bcbf3</model>
+        <model_id>bb89f5941bdc51505e1184c6cc4bcbf3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>24cb3d981bdc51505e1184c6cc4bcba8</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service with Approval">bb89f5941bdc51505e1184c6cc4bcbf3</model>
+        <model_id>bb89f5941bdc51505e1184c6cc4bcbf3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>a0cb3d981bdc51505e1184c6cc4bcbac</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service with Approval">bb89f5941bdc51505e1184c6cc4bcbf3</model>
+        <model_id>bb89f5941bdc51505e1184c6cc4bcbf3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>e4cb3d981bdc51505e1184c6cc4bcba3</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=bb89f5941bdc51505e1184c6cc4bcbf3^sys_idNOT INf8cb3d981bdc51505e1184c6cc4bcbb8"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment>요청을 승인 대기 상태로 수정</comment>
+        <display_text/>
+        <flow display_value="Rental Service with Approval">bb89f5941bdc51505e1184c6cc4bcbf3</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>f8cb3d981bdc51505e1184c6cc4bcbb8</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:53</sys_updated_on>
+        <ui_id>b85e61d0-7e25-447b-923e-b95b32c55b24</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f8cb3d981bdc51505e1184c6cc4bcbb8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f8cb3d981bdc51505e1184c6cc4bcbb8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:08</sys_created_on>
+        <sys_id>38cb3d981bdc51505e1184c6cc4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:08</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f8cb3d981bdc51505e1184c6cc4bcbb8</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:08</sys_created_on>
+        <sys_id>f8cb3d981bdc51505e1184c6cc4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:08</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f8cb3d981bdc51505e1184c6cc4bcbb8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f8cb3d981bdc51505e1184c6cc4bcbb8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:08</sys_created_on>
+        <sys_id>f0cb3d981bdc51505e1184c6cc4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f8cb3d981bdc51505e1184c6cc4bcbb8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:08</sys_created_on>
+        <sys_id>3ccb3d981bdc51505e1184c6cc4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>f8cb3d981bdc51505e1184c6cc4bcbb8</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:08</sys_created_on>
+        <sys_id>b4cb3d981bdc51505e1184c6cc4bcbbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f8cb3d981bdc51505e1184c6cc4bcbb8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f8cb3d981bdc51505e1184c6cc4bcbb8"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3^sys_idNOT IN2ccb3d981bdc51505e1184c6cc4bcbae,64cb3d981bdc51505e1184c6cc4bcba7,e0cb3d981bdc51505e1184c6cc4bcbab"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>2ccb3d981bdc51505e1184c6cc4bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>64cb3d981bdc51505e1184c6cc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:07</sys_created_on>
+        <sys_id>e0cb3d981bdc51505e1184c6cc4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=bb89f5941bdc51505e1184c6cc4bcbf3^sys_idNOT IN98db31d81bdc51505e1184c6cc4bcb39"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"98db31d81bdc51505e1184c6cc4bcb39","name":"plan","plan_signature":null}}</plan>
+        <plan_id>bb89f5941bdc51505e1184c6cc4bcbf3</plan_id>
+        <snapshot>afcbfd981bdc51505e1184c6cc4bcb1d</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>98db31d81bdc51505e1184c6cc4bcb39</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <trigger display_value="">09ac9fd31b60d550b1d29cef034bcbb0</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=bb89f5941bdc51505e1184c6cc4bcbf3"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Rental Requst Flow with Approval</description>
+        <internal_name>rental_service_with_approval</internal_name>
+        <label_cache>[{"name":"04b6527b-b2f6-4cbe-abac-156012b6b1b0.state","label":"2 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"04b6527b-b2f6-4cbe-abac-156012b6b1b0.__action_status__","label":"2 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"04b6527b-b2f6-4cbe-abac-156012b6b1b0.__dont_treat_as_error__","label":"2 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.record","label":"1 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.table_name","label":"1 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.__action_status__","label":"1 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.__dont_treat_as_error__","label":"1 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.Record","label":"3 - Look Up Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.Table","label":"3 - Look Up Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9dc6d60d-10de-4416-bd55-c3f0a63ce36f.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.record","label":"7 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.table_name","label":"7 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fdefbc88-1994-462f-8d6e-78de1cda4b1b.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8932f863-a3f4-4089-8428-605d5d8aa0e2.state","label":"4 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"8932f863-a3f4-4089-8428-605d5d8aa0e2.__action_status__","label":"4 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8932f863-a3f4-4089-8428-605d5d8aa0e2.__dont_treat_as_error__","label":"4 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.record","label":"7 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.table_name","label":"7 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.__action_status__","label":"7 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f81ef5c2-fcb5-4097-b4a2-76fe48a37102.__dont_treat_as_error__","label":"7 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9140f997-312b-4397-b535-e428a20907f1.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9140f997-312b-4397-b535-e428a20907f1.__action_status__","label":"6 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"9140f997-312b-4397-b535-e428a20907f1.__dont_treat_as_error__","label":"6 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"ab618613-5ec1-4ddb-ae51-f554b1406f8c.state","label":"4 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"ab618613-5ec1-4ddb-ae51-f554b1406f8c.__action_status__","label":"4 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ab618613-5ec1-4ddb-ae51-f554b1406f8c.__dont_treat_as_error__","label":"4 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.record","label":"9 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.table_name","label":"9 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.__action_status__","label":"9 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b61986f0-6ba9-4038-a1fb-1b2014f3c2cc.__dont_treat_as_error__","label":"9 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ce96f8f6-bbba-4c03-af90-d52f19c6ec9f.state","label":"9 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"ce96f8f6-bbba-4c03-af90-d52f19c6ec9f.__action_status__","label":"9 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ce96f8f6-bbba-4c03-af90-d52f19c6ec9f.__dont_treat_as_error__","label":"9 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.record","label":"10 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.table_name","label":"10 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.__action_status__","label":"10 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f0ac98b8-d6bf-42e0-84e7-25ac2eac2c03.__dont_treat_as_error__","label":"10 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0496cc13-946a-4656-a666-ee79df60fe1e.state","label":"9 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"0496cc13-946a-4656-a666-ee79df60fe1e.__action_status__","label":"9 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0496cc13-946a-4656-a666-ee79df60fe1e.__dont_treat_as_error__","label":"9 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.record","label":"12 - Update Record➛Rental Request Record","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.table_name","label":"12 - Update Record➛Rental Request Table","reference":"x_tigar_rental_ser_rental_request","reference_display":"Rental Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"85d88978-ad33-4b91-b6e8-a5ee675a31f5.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4f0026de-38cc-4be2-a0da-409b93f76501.answer","label":"12 - Make a decision➛Answer","reference_display":"Answer","type":"document_id","base_type":"document_id","attributes":{}},{"name":"4f0026de-38cc-4be2-a0da-409b93f76501.table_name","label":"12 - Make a decision➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{}},{"name":"Created or Updated_1.current.state","label":"Trigger - Record Created or Updated➛Rental Request Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_tigar_rental_ser_rental_request","column_name":"state","choices":[{"label":"Requested","used":false,"rawLabel":"Requested","image":"","missing":false,"selected":false,"reference":false,"value":"1","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Waiting Approval","used":false,"rawLabel":"Waiting Approval","image":"","missing":false,"selected":false,"reference":false,"value":"2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Approved","used":false,"rawLabel":"Approved","image":"","missing":false,"selected":false,"reference":false,"value":"3","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Prepare","used":false,"rawLabel":"Prepare","image":"","missing":false,"selected":false,"reference":false,"value":"4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Post Deployment","used":false,"rawLabel":"Post Deployment","image":"","missing":false,"selected":false,"reference":false,"value":"5","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Ready for Pick up","used":false,"rawLabel":"Ready for Pick up","image":"","missing":false,"selected":false,"reference":false,"value":"6","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Complete","used":false,"rawLabel":"Complete","image":"","missing":false,"selected":false,"reference":false,"value":"10","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Delay","used":false,"rawLabel":"Delay","image":"","missing":false,"selected":false,"reference":false,"value":"-4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Refused Approval","used":false,"rawLabel":"Refused Approval","image":"","missing":false,"selected":false,"reference":false,"value":"-2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Closed","used":false,"rawLabel":"Closed","image":"","missing":false,"selected":false,"reference":false,"value":"-7","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Hold","used":false,"rawLabel":"Hold","image":"","missing":false,"selected":false,"reference":false,"value":"-101","parameters":{"name":"x_tigar_rental_ser_rental_request"}}]},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.record","label":"13 - Update Record➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.table_name","label":"13 - Update Record➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.__action_status__","label":"13 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"70629479-adbc-491d-a842-0a7b5dfb96ad.__dont_treat_as_error__","label":"13 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"d8255f16-ee1e-4373-920e-c0ad1dbec936.__action_status__","label":"3 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d8255f16-ee1e-4373-920e-c0ad1dbec936.__dont_treat_as_error__","label":"3 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c43d44a8-e33f-4cab-a09a-87b0b599aca5.__action_status__","label":"4 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c43d44a8-e33f-4cab-a09a-87b0b599aca5.__dont_treat_as_error__","label":"4 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9af7a961-1d1b-47c9-93f5-426bf680376f.__action_status__","label":"4 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9af7a961-1d1b-47c9-93f5-426bf680376f.__dont_treat_as_error__","label":"4 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07cd8b63-fe12-49f9-a75e-c5ab22823bac.__action_status__","label":"9 - Send Notification➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07cd8b63-fe12-49f9-a75e-c5ab22823bac.__dont_treat_as_error__","label":"9 - Send Notification➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b85e61d0-7e25-447b-923e-b95b32c55b24.record.state","label":"1 - Update Record➛Rental Request Record➛State","reference":"","reference_display":"State","type":"choice","base_type":"choice","parent_table_name":"x_tigar_rental_ser_rental_request","column_name":"state","choices":[{"label":"Requested","used":false,"rawLabel":"Requested","image":"","missing":false,"selected":false,"reference":false,"value":"1","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Waiting Approval","used":false,"rawLabel":"Waiting Approval","image":"","missing":false,"selected":false,"reference":false,"value":"2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Approved","used":false,"rawLabel":"Approved","image":"","missing":false,"selected":false,"reference":false,"value":"3","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Prepare","used":false,"rawLabel":"Prepare","image":"","missing":false,"selected":false,"reference":false,"value":"4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Post Deployment","used":false,"rawLabel":"Post Deployment","image":"","missing":false,"selected":false,"reference":false,"value":"5","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Ready for Pick up","used":false,"rawLabel":"Ready for Pick up","image":"","missing":false,"selected":false,"reference":false,"value":"6","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Complete","used":false,"rawLabel":"Complete","image":"","missing":false,"selected":false,"reference":false,"value":"10","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Delay","used":false,"rawLabel":"Delay","image":"","missing":false,"selected":false,"reference":false,"value":"-4","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Refused Approval","used":false,"rawLabel":"Refused Approval","image":"","missing":false,"selected":false,"reference":false,"value":"-2","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Closed","used":false,"rawLabel":"Closed","image":"","missing":false,"selected":false,"reference":false,"value":"-7","parameters":{"name":"x_tigar_rental_ser_rental_request"}},{"label":"Hold","used":false,"rawLabel":"Hold","image":"","missing":false,"selected":false,"reference":false,"value":"-101","parameters":{"name":"x_tigar_rental_ser_rental_request"}}]}]</label_cache>
+        <master>true</master>
+        <name>Rental Service with Approval</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Rental Service with Approval">bb89f5941bdc51505e1184c6cc4bcbf3</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>afcbfd981bdc51505e1184c6cc4bcb1d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_variable_value action="delete_multiple" query="document_key=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=afcbfd981bdc51505e1184c6cc4bcb1d^sys_idNOT IN4cdbfd981bdc51505e1184c6cc4bcba8"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment>2000달러 이상의 물품이 요청된 경우</comment>
+        <display_text/>
+        <flow display_value="Rental Service with Approval">afcbfd981bdc51505e1184c6cc4bcb1d</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:21</sys_created_on>
+        <sys_id>4cdbfd981bdc51505e1184c6cc4bcba8</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4cdbfd981bdc51505e1184c6cc4bcba8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4cdbfd981bdc51505e1184c6cc4bcba8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:21</sys_created_on>
+        <sys_id>48dbfd981bdc51505e1184c6cc4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:21</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4cdbfd981bdc51505e1184c6cc4bcba8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 07:57:37</sys_created_on>
+        <sys_id>4f92bced1b6c5910b1d29cef034bcb25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 07:57:37</sys_updated_on>
+        <value>every</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4cdbfd981bdc51505e1184c6cc4bcba8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:21</sys_created_on>
+        <sys_id>84dbfd981bdc51505e1184c6cc4bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:21</sys_updated_on>
+        <value>state=1^price&gt;2000</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=4cdbfd981bdc51505e1184c6cc4bcba8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=afcbfd981bdc51505e1184c6cc4bcb1d^sys_idNOT IN23cbfd981bdc51505e1184c6cc4bcb1f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>afcbfd981bdc51505e1184c6cc4bcb1d</id>
+        <name>Rental Service with Approval</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:19</sys_created_on>
+        <sys_id>23cbfd981bdc51505e1184c6cc4bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:19</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=23cbfd981bdc51505e1184c6cc4bcb1f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=afcbfd981bdc51505e1184c6cc4bcb1d^sys_idNOT IN37cbfd981bdc51505e1184c6cc4bcb49,bfcbfd981bdc51505e1184c6cc4bcb6a,e7cbfd981bdc51505e1184c6cc4bcb22"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD74ac9fd3e160d550283ed39d7b9d297e,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Rental Service with Approval">afcbfd981bdc51505e1184c6cc4bcb1d</model>
+        <model_id>afcbfd981bdc51505e1184c6cc4bcb1d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>37cbfd981bdc51505e1184c6cc4bcb49</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service with Approval">afcbfd981bdc51505e1184c6cc4bcb1d</model>
+        <model_id>afcbfd981bdc51505e1184c6cc4bcb1d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>bfcbfd981bdc51505e1184c6cc4bcb6a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Rental Service with Approval">afcbfd981bdc51505e1184c6cc4bcb1d</model>
+        <model_id>afcbfd981bdc51505e1184c6cc4bcb1d</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:19</sys_created_on>
+        <sys_id>e7cbfd981bdc51505e1184c6cc4bcb22</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=afcbfd981bdc51505e1184c6cc4bcb1d^sys_idNOT INbfcbfd981bdc51505e1184c6cc4bcb7c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment>요청을 승인 대기 상태로 수정</comment>
+        <display_text/>
+        <flow display_value="Rental Service with Approval">afcbfd981bdc51505e1184c6cc4bcb1d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>bfcbfd981bdc51505e1184c6cc4bcb7c</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-13 06:49:52</sys_updated_on>
+        <ui_id>b85e61d0-7e25-447b-923e-b95b32c55b24</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bfcbfd981bdc51505e1184c6cc4bcb7c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bfcbfd981bdc51505e1184c6cc4bcb7c</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>3fcbfd981bdc51505e1184c6cc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <value>x_tigar_rental_ser_rental_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>bfcbfd981bdc51505e1184c6cc4bcb7c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>7bcbfd981bdc51505e1184c6cc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <value>state=2</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bfcbfd981bdc51505e1184c6cc4bcb7c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>bfcbfd981bdc51505e1184c6cc4bcb7c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>37cbfd981bdc51505e1184c6cc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>bfcbfd981bdc51505e1184c6cc4bcb7c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>73cbfd981bdc51505e1184c6cc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>bfcbfd981bdc51505e1184c6cc4bcb7c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>f7cbfd981bdc51505e1184c6cc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bfcbfd981bdc51505e1184c6cc4bcb7c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=bfcbfd981bdc51505e1184c6cc4bcb7c"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d^sys_idNOT IN77cbfd981bdc51505e1184c6cc4bcb67,7fcbfd981bdc51505e1184c6cc4bcb6f,fbcbfd981bdc51505e1184c6cc4bcb45"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>77cbfd981bdc51505e1184c6cc4bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>7fcbfd981bdc51505e1184c6cc4bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 05:49:20</sys_created_on>
+        <sys_id>fbcbfd981bdc51505e1184c6cc4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-21 05:49:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_afcbfd981bdc51505e1184c6cc4bcb1d"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>bb89f5941bdc51505e1184c6cc4bcbf3</sys_id>
+        <latest_snapshot>afcbfd981bdc51505e1184c6cc4bcb1d</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch4-05-25-2022_06-08-2022_0838.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

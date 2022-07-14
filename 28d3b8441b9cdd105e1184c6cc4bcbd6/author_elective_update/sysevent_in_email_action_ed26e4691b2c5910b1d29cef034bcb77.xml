@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="DELETE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">subjectSTARTSWITHTG Post office^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="STARTSWITH" or="false" value="TG Post office"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Rental Arrived Email</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	// Implement email action here
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 07:40:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed26e4691b2c5910b1d29cef034bcb77</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Rental Arrived Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sysevent_in_email_action_ed26e4691b2c5910b1d29cef034bcb77</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 07:53:40</sys_updated_on>
+        <table>x_tigar_rental_ser_rental_request</table>
+        <template>state=6^EQ</template>
+        <type>new</type>
+    </sysevent_in_email_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</application>
+        <file_path/>
+        <instance_id>79ed97abdbd128588aea21c4059619a7</instance_id>
+        <instance_name>timegatecorpdemo1</instance_name>
+        <name>sysevent_in_email_action_ed26e4691b2c5910b1d29cef034bcb77</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sysevent_in_email_action"&gt;&lt;sysevent_in_email_action action="INSERT_OR_UPDATE"&gt;&lt;action&gt;record_action&lt;/action&gt;&lt;active&gt;true&lt;/active&gt;&lt;assignment_operator/&gt;&lt;condition_script/&gt;&lt;description/&gt;&lt;event_name&gt;email.read&lt;/event_name&gt;&lt;filter_condition table="sys_email"&gt;subjectSTARTSWITHTG Post office^EQ&lt;item endquery="false" field="subject" goto="false" newquery="false" operator="STARTSWITH" or="false" value="TG Post office"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;from/&gt;&lt;name&gt;Rental Arrived Email&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;reply_email/&gt;&lt;required_roles/&gt;&lt;script&gt;&lt;![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	// Implement email action here
+
+})(current, event, email, logger, classifier);]]&gt;&lt;/script&gt;&lt;stop_processing&gt;false&lt;/stop_processing&gt;&lt;sys_class_name&gt;sysevent_in_email_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-07-07 07:40:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ed26e4691b2c5910b1d29cef034bcb77&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Rental Arrived Email&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Rental Service" source="x_tigar_rental_ser"&gt;28d3b8441b9cdd105e1184c6cc4bcbd6&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Rental Service"&gt;28d3b8441b9cdd105e1184c6cc4bcbd6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sysevent_in_email_action_ed26e4691b2c5910b1d29cef034bcb77&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-07-07 07:53:40&lt;/sys_updated_on&gt;&lt;table&gt;x_tigar_rental_ser_rental_request&lt;/table&gt;&lt;template&gt;state=6^EQ&lt;/template&gt;&lt;type&gt;new&lt;/type&gt;&lt;/sysevent_in_email_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1086959084</payload_hash>
+        <record_name>Rental Arrived Email</record_name>
+        <reverted_from/>
+        <source>68d3b8441b9cdd105e1184c6cc4bcbd8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 07:53:40</sys_created_on>
+        <sys_id>0db1386d1b6c5910b1d29cef034bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181d7a67a590000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 07:53:40</sys_updated_on>
+        <type>Inbound Email Actions</type>
+        <update_guid>01b1386df36c5910428463d48f3f5cb2</update_guid>
+        <update_guid_history>01b1386df36c5910428463d48f3f5cb2:1086959084,88efec69f76c5910a7ee8ab3370bffe5:-296135258,e0aee8e5b26c591011e9b1c4ce449b2e:-2035091781</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-07 08:32:50</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_in_email_action">sysevent_in_email_action</sys_db_object>
+        <sys_id>1595969d5da549059cec3e1967a47989</sys_id>
+        <sys_metadata>ed26e4691b2c5910b1d29cef034bcb77</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rental Arrived Email</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_parent display_value="Rental Request">984474841b9cdd105e1184c6cc4bcb67</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
+        <sys_update_name>sysevent_in_email_action_ed26e4691b2c5910b1d29cef034bcb77</sys_update_name>
+        <sys_update_version display_value="sysevent_in_email_action_ed26e4691b2c5910b1d29cef034bcb77">0db1386d1b6c5910b1d29cef034bcbb2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-07 08:32:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

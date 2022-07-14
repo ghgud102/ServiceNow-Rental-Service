@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>true</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Rental Hardware">228785541b9851505e1184c6cc4bcb89</category>
+        <checked_out>false</checked_out>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>대여 요청 시 경영지원팀에서 재고 확인 후 대여를 진행합니다.</p>
+<p>200만원 이상의 요청의 경우 경영지원팀 매니저의 승인이 필요합니다.</p>
+<p>발송 시 도착까지 소요되는 시간은 10분입니다.</p>
+<p>승인, 승인거절, 발송, 도착 시 요청자의 이메일 주소로 알림을 전송합니다.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon/>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Rental Request</name>
+        <no_attachment_v2>false</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture/>
+        <post_insert_script/>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=91b705541b9851505e1184c6cc4bcbd4&amp;sysparm_preview=true", "summary");</preview>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <save_options/>
+        <save_script/>
+        <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <script><![CDATA[// Set the state to requested
+current.state = 1;
+
+// Set the short description
+current.short_description = producer.requested_for.getDisplayValue() + ' Requested ' + producer.item_type;
+
+if (producer.location_to_be_used == "project_site") {
+   current.location_to_be_used = producer.site_address;
+}
+
+/*
+// Set the description
+current.description = '요청자 : ' + producer.requested_for.getDisplayValue() + '\n'
+	+ '회사 : ' + producer.company + '\n'
+	+ '품목 : ' + producer.item_type.getDisplayValue() + '\n'
+	+ '사양 : ' + producer.detailed_specification + '\n'
+	+ '금액 : ' + producer.price + '\n'
+	+ '사용 목적 : ' + producer.purpose + '\n'
+	+ '사용 장소 : ' + producer.location_to_be_used + '\n'
+	+ '대여 시작일 : ' + producer.start_date + '\n'
+	+ '대여 종료일 : ' + producer.end_date + '\n';
+*/
+]]></script>
+        <short_description>Submit a New Rental Request</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state>published</state>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-21 02:01:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>91b705541b9851505e1184c6cc4bcbd4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Rental Request</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sc_cat_item_producer_91b705541b9851505e1184c6cc4bcbd4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-11 08:33:58</sys_updated_on>
+        <table_name>x_tigar_rental_ser_rental_request</table_name>
+        <taxonomy_topic/>
+        <template/>
+        <template_manager_roles/>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=91b705541b9851505e1184c6cc4bcbd4"/>
+    <fx_price action="delete_multiple" query="id=91b705541b9851505e1184c6cc4bcbd4"/>
+</record_update>

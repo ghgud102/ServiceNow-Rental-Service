@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>0</order>
+        <published_ref display_value="1 - High">a5b789541b9851505e1184c6cc4bcb93</published_ref>
+        <question display_value="Urgency">f6234f411be895105e1184c6cc4bcb84</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:12:15</sys_created_on>
+        <sys_id>b6234f411be895105e1184c6cc4bcb94</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1 - High</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>question_choice_b6234f411be895105e1184c6cc4bcb94</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:12:15</sys_updated_on>
+        <text>1 - High</text>
+        <value>1</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=b6234f411be895105e1184c6cc4bcb94"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</application>
+        <file_path/>
+        <instance_id>79ed97abdbd128588aea21c4059619a7</instance_id>
+        <instance_name>timegatecorpdemo1</instance_name>
+        <name>question_choice_b6234f411be895105e1184c6cc4bcb94</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>0</order><published_ref display_value="1 - High">a5b789541b9851505e1184c6cc4bcb93</published_ref><question display_value="Urgency">f6234f411be895105e1184c6cc4bcb84</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-06 05:12:15</sys_created_on><sys_id>b6234f411be895105e1184c6cc4bcb94</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1 - High</sys_name><sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package><sys_policy/><sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope><sys_update_name>question_choice_b6234f411be895105e1184c6cc4bcb94</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-06 05:12:15</sys_updated_on><text>1 - High</text><value>1</value></question_choice><fx_price action="delete_multiple" query="id=b6234f411be895105e1184c6cc4bcb94"/></record_update>]]></payload>
+        <payload_hash>-1649378811</payload_hash>
+        <record_name>1 - High</record_name>
+        <reverted_from/>
+        <source>68d3b8441b9cdd105e1184c6cc4bcbd8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:12:15</sys_created_on>
+        <sys_id>7e234f411be895105e1184c6cc4bcb96</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181d1ec53bf0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:12:15</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>b2234f413ee89510c56d1b32f8d4f696</update_guid>
+        <update_guid_history>b2234f413ee89510c56d1b32f8d4f696:-1649378811</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1 - High">e5a40f051ba4d510b1d29cef034bcb1e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-06 05:18:43</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>e5477bbab00347099c32d154a3a4e469</sys_id>
+        <sys_metadata>b6234f411be895105e1184c6cc4bcb94</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1 - High</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_parent display_value="">f6234f411be895105e1184c6cc4bcb84</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
+        <sys_update_name>question_choice_b6234f411be895105e1184c6cc4bcb94</sys_update_name>
+        <sys_update_version display_value="question_choice_b6234f411be895105e1184c6cc4bcb94">7e234f411be895105e1184c6cc4bcb96</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:18:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

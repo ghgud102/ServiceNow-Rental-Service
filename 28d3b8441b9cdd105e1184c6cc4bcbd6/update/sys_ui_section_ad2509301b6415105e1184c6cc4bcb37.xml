@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Description" section_id="ad2509301b6415105e1184c6cc4bcb37" sys_domain="global" table="x_tigar_rental_ser_rental_request" version="3" view="ess">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-05 01:23:12</sys_created_on>
+            <sys_id>f52509301b6415105e1184c6cc4bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Description" display_value="Description" name="x_tigar_rental_ser_rental_request" sys_domain="global" view="8100a1521b3001105e1184c6cc4bcbdb">ad2509301b6415105e1184c6cc4bcb37</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-05 01:23:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-05 01:23:12</sys_created_on>
+            <sys_id>792509301b6415105e1184c6cc4bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Description" display_value="Description" name="x_tigar_rental_ser_rental_request" sys_domain="global" view="8100a1521b3001105e1184c6cc4bcbdb">ad2509301b6415105e1184c6cc4bcb37</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-05 01:23:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-05 01:23:12</sys_created_on>
+            <sys_id>f92509301b6415105e1184c6cc4bcbc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Description" display_value="Description" name="x_tigar_rental_ser_rental_request" sys_domain="global" view="8100a1521b3001105e1184c6cc4bcbdb">ad2509301b6415105e1184c6cc4bcb37</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-05 01:23:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Description</caption>
+            <header>false</header>
+            <name>x_tigar_rental_ser_rental_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-07-05 01:23:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad2509301b6415105e1184c6cc4bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_tigar_rental_ser_rental_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+            <sys_update_name>sys_ui_section_ad2509301b6415105e1184c6cc4bcb37</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-07-05 01:23:10</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Self Service" name="ess">8100a1521b3001105e1184c6cc4bcbdb</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

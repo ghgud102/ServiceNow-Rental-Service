@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>2</order>
+        <published_ref display_value="Issue with email">3db7c9541b9851505e1184c6cc4bcb31</published_ref>
+        <question display_value="Short description">9e234f411be895105e1184c6cc4bcb16</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:12:13</sys_created_on>
+        <sys_id>22234f411be895105e1184c6cc4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Issue with email</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>question_choice_22234f411be895105e1184c6cc4bcb30</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:12:13</sys_updated_on>
+        <text>Issue with email</text>
+        <value>Issue with email</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=22234f411be895105e1184c6cc4bcb30"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</application>
+        <file_path/>
+        <instance_id>79ed97abdbd128588aea21c4059619a7</instance_id>
+        <instance_name>timegatecorpdemo1</instance_name>
+        <name>question_choice_22234f411be895105e1184c6cc4bcb30</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>2</order><published_ref display_value="Issue with email">3db7c9541b9851505e1184c6cc4bcb31</published_ref><question display_value="Short description">9e234f411be895105e1184c6cc4bcb16</question><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-06 05:12:13</sys_created_on><sys_id>22234f411be895105e1184c6cc4bcb30</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Issue with email</sys_name><sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package><sys_policy/><sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope><sys_update_name>question_choice_22234f411be895105e1184c6cc4bcb30</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-06 05:12:13</sys_updated_on><text>Issue with email</text><value>Issue with email</value></question_choice><fx_price action="delete_multiple" query="id=22234f411be895105e1184c6cc4bcb30"/></record_update>]]></payload>
+        <payload_hash>-1910293456</payload_hash>
+        <record_name>Issue with email</record_name>
+        <reverted_from/>
+        <source>68d3b8441b9cdd105e1184c6cc4bcbd8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:12:13</sys_created_on>
+        <sys_id>2a234f411be895105e1184c6cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181d1ec4e710000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:12:13</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>6e234f4145e895106d58fd2fc4e7a831</update_guid>
+        <update_guid_history>6e234f4145e895106d58fd2fc4e7a831:-1910293456</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Issue with email">d9a4cb051ba4d510b1d29cef034bcb6b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-07-06 05:18:42</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>233d60d6f8874b018c3d8de49ff078f1</sys_id>
+        <sys_metadata>22234f411be895105e1184c6cc4bcb30</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Issue with email</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_parent display_value="">9e234f411be895105e1184c6cc4bcb16</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
+        <sys_update_name>question_choice_22234f411be895105e1184c6cc4bcb30</sys_update_name>
+        <sys_update_version display_value="question_choice_22234f411be895105e1184c6cc4bcb30">2a234f411be895105e1184c6cc4bcb32</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:18:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

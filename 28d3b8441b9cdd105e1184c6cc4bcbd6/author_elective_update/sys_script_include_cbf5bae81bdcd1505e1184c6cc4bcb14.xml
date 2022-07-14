@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_tigar_rental_ser.ClientDateUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ClientDateUtils</name>
+        <script><![CDATA[var ClientDateUtils = Class.create();
+ClientDateUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getToday: function(){ //선택한 CI를 기초로 하는 2개 필드값을 가져오는 함수
+		var todayDate = new GlideDate(); //cmdb_ci에 대한 gr 객체 생성
+		return todayDate; // 클라이언트 사이드로 리턴
+	},
+	
+    type: 'ClientDateUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-22 05:06:15</sys_created_on>
+        <sys_id>cbf5bae81bdcd1505e1184c6cc4bcb14</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ClientDateUtils</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sys_script_include_cbf5bae81bdcd1505e1184c6cc4bcb14</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-22 05:27:57</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</application>
+        <file_path/>
+        <instance_id>79ed97abdbd128588aea21c4059619a7</instance_id>
+        <instance_name>timegatecorpdemo1</instance_name>
+        <name>sys_script_include_cbf5bae81bdcd1505e1184c6cc4bcb14</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_tigar_rental_ser.ClientDateUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;ClientDateUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var ClientDateUtils = Class.create();
+ClientDateUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getToday: function(){ //선택한 CI를 기초로 하는 2개 필드값을 가져오는 함수
+		var todayDate = new GlideDate(); //cmdb_ci에 대한 gr 객체 생성
+		return todayDate; // 클라이언트 사이드로 리턴
+	},
+	
+    type: 'ClientDateUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-06-22 05:06:15&lt;/sys_created_on&gt;&lt;sys_id&gt;cbf5bae81bdcd1505e1184c6cc4bcb14&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;ClientDateUtils&lt;/sys_name&gt;&lt;sys_package display_value="Rental Service" source="x_tigar_rental_ser"&gt;28d3b8441b9cdd105e1184c6cc4bcbd6&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Rental Service"&gt;28d3b8441b9cdd105e1184c6cc4bcbd6&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_cbf5bae81bdcd1505e1184c6cc4bcb14&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-06-22 05:27:57&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-291280305</payload_hash>
+        <record_name>ClientDateUtils</record_name>
+        <reverted_from/>
+        <source>68d3b8441b9cdd105e1184c6cc4bcbd8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-22 05:27:57</sys_created_on>
+        <sys_id>5880c7e81b1015505e1184c6cc4bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18189e1acde0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-22 05:27:57</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>9c80c7e89b1015503ddcd25f41bf5fcf</update_guid>
+        <update_guid_history>9c80c7e89b1015503ddcd25f41bf5fcf:-291280305,6b5ebe28391015508086b56e6a338322:116383339,268bf224871015502376470756cd8e70:-2144514831</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-06-22 05:36:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>36e7dc570cf441749137f267b929af11</sys_id>
+        <sys_metadata>cbf5bae81bdcd1505e1184c6cc4bcb14</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ClientDateUtils</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
+        <sys_update_name>sys_script_include_cbf5bae81bdcd1505e1184c6cc4bcb14</sys_update_name>
+        <sys_update_version display_value="sys_script_include_cbf5bae81bdcd1505e1184c6cc4bcb14">5880c7e81b1015505e1184c6cc4bcbd0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-06-22 05:36:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

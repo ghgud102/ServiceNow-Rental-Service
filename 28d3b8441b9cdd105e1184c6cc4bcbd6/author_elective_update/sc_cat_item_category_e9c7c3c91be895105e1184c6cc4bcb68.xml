@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Rental Request">2bb7cb891be895105e1184c6cc4bcb86</sc_cat_item>
+        <sc_category display_value="Rental Hardware">228785541b9851505e1184c6cc4bcb89</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:32:22</sys_created_on>
+        <sys_id>e9c7c3c91be895105e1184c6cc4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rental Hardware.Rental Request</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sc_cat_item_category_e9c7c3c91be895105e1184c6cc4bcb68</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:32:22</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</application>
+        <file_path/>
+        <instance_id>79ed97abdbd128588aea21c4059619a7</instance_id>
+        <instance_name>timegatecorpdemo1</instance_name>
+        <name>sc_cat_item_category_e9c7c3c91be895105e1184c6cc4bcb68</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Rental Request">2bb7cb891be895105e1184c6cc4bcb86</sc_cat_item><sc_category display_value="Rental Hardware">228785541b9851505e1184c6cc4bcb89</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-07-06 05:32:22</sys_created_on><sys_id>e9c7c3c91be895105e1184c6cc4bcb68</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Rental Hardware.Rental Request</sys_name><sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package><sys_policy/><sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope><sys_update_name>sc_cat_item_category_e9c7c3c91be895105e1184c6cc4bcb68</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-07-06 05:32:22</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>2002687526</payload_hash>
+        <record_name>Rental Hardware.Rental Request</record_name>
+        <reverted_from/>
+        <source>68d3b8441b9cdd105e1184c6cc4bcbd8</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:32:22</sys_created_on>
+        <sys_id>29c7c3c91be895105e1184c6cc4bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>181d1febf530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:32:22</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>6dc7c3c9d1e89510db611ddc88d1d56b</update_guid>
+        <update_guid_history>6dc7c3c9d1e89510db611ddc88d1d56b:2002687526</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Rental Hardware.Rental Request">6ce907cd1be895105e1184c6cc4bcb1d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-06 05:41:35</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>20dc43e9b36844f88ad29f9bc3ec2f44</sys_id>
+        <sys_metadata>e9c7c3c91be895105e1184c6cc4bcb68</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rental Hardware.Rental Request</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_e9c7c3c91be895105e1184c6cc4bcb68</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_e9c7c3c91be895105e1184c6cc4bcb68">29c7c3c91be895105e1184c6cc4bcb6c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 05:41:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

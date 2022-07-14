@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <can_iterate>false</can_iterate>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <name>Rental Service batch</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2022-07-05 05:28:59</run_start>
+        <run_time>1969-12-31 15:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[//var propertiesTime = gs.getProperty('x_tigar_rental_ser.WaitingApproval')*24*60*60*1000; //10일
+var propertiesTime = gs.getProperty('x_tigar_rental_ser.WaitingApproval')*1000; //1초
+var gr = new GlideRecord('x_tigar_rental_ser_rental_request');
+gr.addQuery('state',2); // 승인 대기 상태인 레코드 쿼리
+gr.query();
+
+while(gr.next()){ // 전체 레코드 조회
+	//생성된 시간으로부터 10일이 지난 날보다 오늘이 미래이면, 이벤트 발생
+	var remindTime = new GlideDateTime(gr.getValue('sys_created_on'));
+	remindTime.add(propertiesTime);
+	var today = new GlideDateTime();
+	if(remindTime < today){
+		gs.eventQueue('x_tigar_rental_ser.approval reminder',gr ,gr.getValue('assigned_to'));
+	}
+}]]></script>
+        <source_filter/>
+        <source_table>sa_metric_anomaly_test_result</source_table>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-07-05 05:59:35</sys_created_on>
+        <sys_id>566d3d381ba815105e1184c6cc4bcb40</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Rental Service batch</sys_name>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
+        <sys_update_name>sysauto_script_566d3d381ba815105e1184c6cc4bcb40</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-07-06 08:04:07</sys_updated_on>
+        <time_zone>Asia/Tokyo</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
