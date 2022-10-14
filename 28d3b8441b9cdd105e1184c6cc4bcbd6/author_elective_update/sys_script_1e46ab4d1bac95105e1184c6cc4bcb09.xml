@@ -90,16 +90,13 @@
         <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
         <sys_id>20c5dfa904f74af2877a5d14b5a5c604</sys_id>
         <sys_metadata>1e46ab4d1bac95105e1184c6cc4bcb09</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Set State Complete</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
-        <sys_parent display_value="Rental Request">984474841b9cdd105e1184c6cc4bcb67</sys_parent>
+        <sys_parent display_value="">984474841b9cdd105e1184c6cc4bcb67</sys_parent>
         <sys_policy/>
         <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>sys_script_1e46ab4d1bac95105e1184c6cc4bcb09</sys_update_name>
         <sys_update_version display_value="sys_script_1e46ab4d1bac95105e1184c6cc4bcb09">b388ab411bec95105e1184c6cc4bcb34</sys_update_version>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-12 05:22:23</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

@@ -77,14 +77,13 @@
         <update_guid_history>5f670f4915a4d510b6a32fb2079f3d62:373920810,6ef487457ee89510bd1a46df2928414d:1192098682</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Price greater then 2000">a16c47c11be4d510b1d29cef034bcbf8</sys_audit_delete>
+        <sys_audit_delete display_value="">a16c47c11be4d510b1d29cef034bcbf8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:52:35</sys_created_on>
         <sys_db_object display_value="" name="catalog_ui_policy">catalog_ui_policy</sys_db_object>
         <sys_id>cc5f867b63bc4c14a5d8b2ab7cc8f610</sys_id>
         <sys_metadata>aaf487451be895105e1184c6cc4bcb4b</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Price greater then 2000</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent/>
@@ -93,7 +92,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>catalog_ui_policy_aaf487451be895105e1184c6cc4bcb4b</sys_update_name>
         <sys_update_version display_value="catalog_ui_policy_aaf487451be895105e1184c6cc4bcb4b">5b670f491ba4d510b1d29cef034bcb63</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:52:35</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

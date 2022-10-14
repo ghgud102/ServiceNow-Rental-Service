@@ -6,14 +6,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-04 05:08:24</sys_created_on>
         <sys_id>f91f246c1b6c9110b1d29cef034bcb18</sys_id>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>count</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
         <sys_update_name>sys_rest_message_fn_parameters_f91f246c1b6c9110b1d29cef034bcb18</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-04 05:08:24</sys_updated_on>
         <type>string</type>
         <value>1</value>
     </sys_rest_message_fn_parameters>

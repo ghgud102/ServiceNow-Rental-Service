@@ -105,7 +105,6 @@
         <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
         <sys_id>05fdb97d7d014e40809ef0091dd8eec4</sys_id>
         <sys_metadata>24bce8251b6c5910b1d29cef034bcb01</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Rental Service Post and Arrive Flow</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent/>
@@ -114,7 +113,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>sys_hub_flow_24bce8251b6c5910b1d29cef034bcb01</sys_update_name>
         <sys_update_version display_value="sys_hub_flow_24bce8251b6c5910b1d29cef034bcb01">b8bce8251b6c5910b1d29cef034bcb08</sys_update_version>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-07 08:24:45</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

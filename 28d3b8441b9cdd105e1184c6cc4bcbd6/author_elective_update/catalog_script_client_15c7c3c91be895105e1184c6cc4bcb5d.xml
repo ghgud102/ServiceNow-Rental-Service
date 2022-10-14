@@ -89,14 +89,13 @@
         <update_guid_history>5dc7c3c942e89510e2e0ae32570eb45f:-1016619848,5dc7c3c942e89510e2e0ae32570eb45f:-1016619848</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Set Start date Catalog Version">d07e47091b2c95105e1184c6cc4bcbdd</sys_audit_delete>
+        <sys_audit_delete display_value="">d07e47091b2c95105e1184c6cc4bcbdd</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 06:01:30</sys_created_on>
         <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
         <sys_id>275618a4cdae45ae9701c429c2757064</sys_id>
         <sys_metadata>15c7c3c91be895105e1184c6cc4bcb5d</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Set Start date Catalog Version</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent/>
@@ -105,7 +104,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>catalog_script_client_15c7c3c91be895105e1184c6cc4bcb5d</sys_update_name>
         <sys_update_version display_value="catalog_script_client_15c7c3c91be895105e1184c6cc4bcb5d">f0e907cd1be895105e1184c6cc4bcb38</sys_update_version>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 06:01:30</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

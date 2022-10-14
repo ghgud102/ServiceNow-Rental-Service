@@ -77,14 +77,13 @@
         <update_guid_history>79b296e0361cd150873ff74ec29ba3ed:-1743079985</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Site Address Variable set Visible and Mandatory">74a48b051ba4d510b1d29cef034bcbb6</sys_audit_delete>
+        <sys_audit_delete display_value="">74a48b051ba4d510b1d29cef034bcbb6</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:18:40</sys_created_on>
         <sys_db_object display_value="" name="catalog_ui_policy">catalog_ui_policy</sys_db_object>
         <sys_id>1790dafff8794470946ea79403162840</sys_id>
         <sys_metadata>acd152a01b1cd1505e1184c6cc4bcbba</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Site Address Variable set Visible and Mandatory</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent/>
@@ -93,7 +92,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>catalog_ui_policy_acd152a01b1cd1505e1184c6cc4bcbba</sys_update_name>
         <sys_update_version display_value="catalog_ui_policy_acd152a01b1cd1505e1184c6cc4bcbba">71b296e01b1cd1505e1184c6cc4bcbee</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:18:40</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

@@ -46,14 +46,13 @@
         <update_guid_history>b37e4b09a02c9510e1d559ddc0b29361:-503020692</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Request for a new service">352017891be4d510b1d29cef034bcbc2</sys_audit_delete>
+        <sys_audit_delete display_value="">352017891be4d510b1d29cef034bcbc2</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 06:08:58</sys_created_on>
         <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
         <sys_id>66b39e8e955f467db36afae6d563da39</sys_id>
         <sys_metadata>b77e4b091b2c95105e1184c6cc4bcb5f</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Request for a new service</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="">a77e4b091b2c95105e1184c6cc4bcb14</sys_parent>
@@ -62,7 +61,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>question_choice_b77e4b091b2c95105e1184c6cc4bcb5f</sys_update_name>
         <sys_update_version display_value="question_choice_b77e4b091b2c95105e1184c6cc4bcb5f">7f7e4b091b2c95105e1184c6cc4bcb61</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 06:08:58</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

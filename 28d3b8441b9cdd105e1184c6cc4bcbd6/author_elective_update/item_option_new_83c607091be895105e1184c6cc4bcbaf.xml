@@ -156,14 +156,13 @@
         <update_guid_history>cb7c8fc1a3e4d510081f8874720d1ff8:2051903357,397703892aa4d5105cca387f57e8341a:1096892046,6e378f49e4e89510140237066ca42c04:40645242,0d270b496fe89510c0635df765a60cb2:-1609101384,26f64349efe8951048a6cbdc9acb4abd:-286491049,97c64b09fbe89510b4b09556c4202d68:40645242</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Third Container">739d4b851b2c95105e1184c6cc4bcbc8</sys_audit_delete>
+        <sys_audit_delete display_value="">739d4b851b2c95105e1184c6cc4bcbc8</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 05:57:55</sys_created_on>
         <sys_db_object display_value="" name="item_option_new">item_option_new</sys_db_object>
         <sys_id>201679bd9c17412c9625f05d0fd834c4</sys_id>
         <sys_metadata>83c607091be895105e1184c6cc4bcbaf</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Third Container</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="Rental Request">91b705541b9851505e1184c6cc4bcbd4</sys_parent>
@@ -172,7 +171,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>item_option_new_83c607091be895105e1184c6cc4bcbaf</sys_update_name>
         <sys_update_version display_value="item_option_new_83c607091be895105e1184c6cc4bcbaf">d77c8fc11be4d510b1d29cef034bcbf9</sys_update_version>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:57:55</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

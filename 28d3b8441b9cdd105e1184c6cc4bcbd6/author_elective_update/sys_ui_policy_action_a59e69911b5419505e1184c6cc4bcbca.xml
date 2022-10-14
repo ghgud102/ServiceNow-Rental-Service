@@ -53,7 +53,6 @@
         <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
         <sys_id>0f139806f2cc4e6ea58f8165c916caa4</sys_id>
         <sys_metadata>a59e69911b5419505e1184c6cc4bcbca</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>end_date</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="Start and End dates Max Rental Period">10c0d3a41b9015505e1184c6cc4bcba8</sys_parent>
@@ -62,7 +61,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>sys_ui_policy_action_a59e69911b5419505e1184c6cc4bcbca</sys_update_name>
         <sys_update_version display_value="sys_ui_policy_action_a59e69911b5419505e1184c6cc4bcbca">45ae69911b5419505e1184c6cc4bcbd3</sys_update_version>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-24 07:26:36</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

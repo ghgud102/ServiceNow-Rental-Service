@@ -156,14 +156,13 @@
         <update_guid_history>6d370f49d6e895106bdffdccaabd46a9:-1644089333,8027c74921e895101608abefc5fa3450:754014537,21f6034976e895108470fdc3ef4a3939:1953066472,f0d6cb092ee8951035eabe17ed812b26:-1644089333,f8860309cee895100724e56d6d1761f0:-445037398,67754785afe8951087d713855abf3448:1451826028,8af4474553e89510afa090cb55c6aab1:252774093</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Price">d777c3891ba4d510b1d29cef034bcb72</sys_audit_delete>
+        <sys_audit_delete display_value="">d777c3891ba4d510b1d29cef034bcb72</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:31:08</sys_created_on>
         <sys_db_object display_value="" name="item_option_new">item_option_new</sys_db_object>
         <sys_id>0103830f93b04e648daa2550e5862d49</sys_id>
         <sys_metadata>cef447451be895105e1184c6cc4bcba7</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Price</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="">4df443451be895105e1184c6cc4bcb10</sys_parent>
@@ -172,7 +171,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>item_option_new_cef447451be895105e1184c6cc4bcba7</sys_update_name>
         <sys_update_version display_value="item_option_new_cef447451be895105e1184c6cc4bcba7">69370f491be895105e1184c6cc4bcbaa</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:31:08</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

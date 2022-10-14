@@ -28,7 +28,7 @@
         <reverted_from/>
         <source>68d3b8441b9cdd105e1184c6cc4bcbd8</source>
         <source_table>sys_update_set</source_table>
-        <state>current</state>
+        <state>previous</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 05:20:09</sys_created_on>
         <sys_id>36f487451be895105e1184c6cc4bcb66</sys_id>
@@ -41,14 +41,13 @@
         <update_guid_history>7af487452ce89510213bc43609bcf765:888826251</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Service Catalog.Rental Request">fd6c87c11be4d510b1d29cef034bcb18</sys_audit_delete>
+        <sys_audit_delete display_value="">fd6c87c11be4d510b1d29cef034bcb18</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:52:35</sys_created_on>
         <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
         <sys_id>4ab17c6b769349249a9bde23ddf4fae4</sys_id>
         <sys_metadata>66f487451be895105e1184c6cc4bcb63</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Service Catalog.Rental Request</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="Rental Request">91b705541b9851505e1184c6cc4bcbd4</sys_parent>
@@ -57,7 +56,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>sc_cat_item_catalog_66f487451be895105e1184c6cc4bcb63</sys_update_name>
         <sys_update_version display_value="sc_cat_item_catalog_66f487451be895105e1184c6cc4bcb63">36f487451be895105e1184c6cc4bcb66</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:52:35</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

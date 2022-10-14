@@ -41,6 +41,7 @@
         <mask_use_encryption>false</mask_use_encryption>
         <name>start_date</name>
         <order>1700</order>
+        <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
@@ -68,14 +69,11 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 06:01:45</sys_created_on>
         <sys_id>b1b7c9541b9851505e1184c6cc4bcb02</sys_id>
-        <sys_mod_count>6</sys_mod_count>
         <sys_name>Start date</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
         <sys_update_name>item_option_new_b1b7c9541b9851505e1184c6cc4bcb02</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 06:09:04</sys_updated_on>
         <table/>
         <tooltip/>
         <type>10</type>

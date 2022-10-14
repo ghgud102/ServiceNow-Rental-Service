@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="task" label="Rental Request" max_length="40" name="x_tigar_rental_ser_rental_request" sizeclass="18" type="collection">
+    <element db_object_id="cd00c8fb1b4d5110cc9efdd2cd4bcb50" extends="task" label="Rental Request" max_length="40" name="x_tigar_rental_ser_rental_request" type="collection">
         <element attributes="edge_encryption_enabled=true" label="Detailed Specification" max_length="40" name="detailed_specification" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="End date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Item type" max_length="40" name="item_type" type="string">

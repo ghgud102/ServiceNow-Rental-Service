@@ -46,14 +46,13 @@
         <update_guid_history>1ef44745dbe89510623007c6608d92d1:435115686</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Display Monitor">3f670f491ba4d510b1d29cef034bcba0</sys_audit_delete>
+        <sys_audit_delete display_value="">3f670f491ba4d510b1d29cef034bcba0</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:30:53</sys_created_on>
         <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
         <sys_id>063e0b0870a64f2d809ff91b4895a459</sys_id>
         <sys_metadata>12f447451be895105e1184c6cc4bcbd0</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Display Monitor</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="">cef447451be895105e1184c6cc4bcbbd</sys_parent>
@@ -62,7 +61,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>question_choice_12f447451be895105e1184c6cc4bcbd0</sys_update_name>
         <sys_update_version display_value="question_choice_12f447451be895105e1184c6cc4bcbd0">d6f447451be895105e1184c6cc4bcbd2</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:30:53</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

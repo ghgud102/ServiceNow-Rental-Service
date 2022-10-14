@@ -46,14 +46,13 @@
         <update_guid_history>93238f41f2e895104cda18191e30b565:-217456105</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Project Site">2da4cb051ba4d510b1d29cef034bcbe3</sys_audit_delete>
+        <sys_audit_delete display_value="">2da4cb051ba4d510b1d29cef034bcbe3</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:18:43</sys_created_on>
         <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
         <sys_id>1b2c562becdd473c9f1124b6fee77059</sys_id>
         <sys_metadata>57238f411be895105e1184c6cc4bcb63</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Project Site</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="">9f238f411be895105e1184c6cc4bcb56</sys_parent>
@@ -62,7 +61,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>question_choice_57238f411be895105e1184c6cc4bcb63</sys_update_name>
         <sys_update_version display_value="question_choice_57238f411be895105e1184c6cc4bcb63">5f238f411be895105e1184c6cc4bcb65</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:18:43</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

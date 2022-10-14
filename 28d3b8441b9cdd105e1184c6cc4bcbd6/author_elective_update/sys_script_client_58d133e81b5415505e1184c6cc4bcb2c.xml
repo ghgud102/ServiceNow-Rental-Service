@@ -88,16 +88,13 @@
         <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
         <sys_id>4f1012b2584c4b5b8b5a98df2e8b7189</sys_id>
         <sys_metadata>58d133e81b5415505e1184c6cc4bcb2c</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Set Start date</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
-        <sys_parent display_value="Rental Request">984474841b9cdd105e1184c6cc4bcb67</sys_parent>
+        <sys_parent display_value="">984474841b9cdd105e1184c6cc4bcb67</sys_parent>
         <sys_policy/>
         <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>sys_script_client_58d133e81b5415505e1184c6cc4bcb2c</sys_update_name>
         <sys_update_version display_value="sys_script_client_58d133e81b5415505e1184c6cc4bcb2c">5522bbe81b5415505e1184c6cc4bcb03</sys_update_version>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-06-24 07:48:20</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

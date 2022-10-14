@@ -156,14 +156,13 @@
         <update_guid_history>70105fc9ca2c951097a818815f1a66f1:1887524053,e71fc389162c9510c77084c9349bd060:-1380203020,9ffe8f49b52c95102dcf4ed6be59ed7c:860283830,9eee8b49732c9510009cb846f7f29d50:-1194196616,25ce8749d12c9510e38d2cf264d54252:1046290234,9eae4349822c95101006045855a3b431:-2132638638,f37e4b09652c9510b7f2ce0efc5a871b:1887524053</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Short description">3a2097891be4d510b1d29cef034bcbd7</sys_audit_delete>
+        <sys_audit_delete display_value="">3a2097891be4d510b1d29cef034bcbd7</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 06:09:03</sys_created_on>
         <sys_db_object display_value="" name="item_option_new">item_option_new</sys_db_object>
         <sys_id>a65ba16098a148a2982cf41dd5958469</sys_id>
         <sys_metadata>a77e4b091b2c95105e1184c6cc4bcb14</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Short description</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="">1f7e47091b2c95105e1184c6cc4bcbaa</sys_parent>
@@ -172,7 +171,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>item_option_new_a77e4b091b2c95105e1184c6cc4bcb14</sys_update_name>
         <sys_update_version display_value="item_option_new_a77e4b091b2c95105e1184c6cc4bcb14">7c105fc91b2c95105e1184c6cc4bcbf1</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 06:09:03</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

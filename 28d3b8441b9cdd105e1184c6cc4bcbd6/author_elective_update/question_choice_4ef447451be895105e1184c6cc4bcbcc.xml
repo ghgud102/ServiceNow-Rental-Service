@@ -46,14 +46,13 @@
         <update_guid_history>5af4474505e895107a34b781c66a0bce:1199003773</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Projector">fb670f491ba4d510b1d29cef034bcbcf</sys_audit_delete>
+        <sys_audit_delete display_value="">fb670f491ba4d510b1d29cef034bcbcf</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:30:53</sys_created_on>
         <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
         <sys_id>1a7970eab19849a8894a23f4dcf1f840</sys_id>
         <sys_metadata>4ef447451be895105e1184c6cc4bcbcc</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Projector</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="">cef447451be895105e1184c6cc4bcbbd</sys_parent>
@@ -62,7 +61,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>question_choice_4ef447451be895105e1184c6cc4bcbcc</sys_update_name>
         <sys_update_version display_value="question_choice_4ef447451be895105e1184c6cc4bcbcc">16f447451be895105e1184c6cc4bcbcf</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:30:53</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

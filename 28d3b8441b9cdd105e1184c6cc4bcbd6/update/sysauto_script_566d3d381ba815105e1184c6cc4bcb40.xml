@@ -2,7 +2,6 @@
     <sysauto_script action="INSERT_OR_UPDATE">
         <active>true</active>
         <business_calendar/>
-        <can_iterate>false</can_iterate>
         <condition/>
         <conditional>false</conditional>
         <entered_time>1970-01-01 00:00:00</entered_time>
@@ -32,20 +31,15 @@ while(gr.next()){ // 전체 레코드 조회
 		gs.eventQueue('x_tigar_rental_ser.approval reminder',gr ,gr.getValue('assigned_to'));
 	}
 }]]></script>
-        <source_filter/>
-        <source_table>sa_metric_anomaly_test_result</source_table>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-05 05:59:35</sys_created_on>
         <sys_id>566d3d381ba815105e1184c6cc4bcb40</sys_id>
-        <sys_mod_count>8</sys_mod_count>
         <sys_name>Rental Service batch</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
         <sys_update_name>sysauto_script_566d3d381ba815105e1184c6cc4bcb40</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 08:04:07</sys_updated_on>
         <time_zone>Asia/Tokyo</time_zone>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>

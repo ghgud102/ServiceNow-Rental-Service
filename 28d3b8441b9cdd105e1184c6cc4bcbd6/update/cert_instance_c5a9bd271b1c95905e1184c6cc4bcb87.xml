@@ -7,7 +7,6 @@
         <assignment_type>User Field</assignment_type>
         <audit_type>data_cert</audit_type>
         <business_calendar/>
-        <can_iterate>false</can_iterate>
         <cert_audit_instance/>
         <cert_condition/>
         <cert_schedule display_value="Unix Server in South Africa">79550e559791300000f8d7b8fa297543</cert_schedule>
@@ -46,8 +45,6 @@
         <run_type>daily</run_type>
         <script><![CDATA[ ]]></script>
         <short_description/>
-        <source_filter/>
-        <source_table/>
         <stability_count>1</stability_count>
         <state>3</state>
         <sys_class_name>cert_instance</sys_class_name>
@@ -56,20 +53,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c5a9bd271b1c95905e1184c6cc4bcb87</sys_id>
-        <sys_mod_count>3</sys_mod_count>
         <sys_name>Unix Server in South Africa</sys_name>
-        <sys_package display_value="Data Certification" source="com.snc.certification_v2">4c0911661bb441105e1184c6cc4bcbf0</sys_package>
+        <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_policy/>
         <sys_scope display_value="Rental Service">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_scope>
         <sys_update_name>cert_instance_c5a9bd271b1c95905e1184c6cc4bcb87</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-01 08:00:09</sys_updated_on>
         <table>cmdb_ci_unix_server</table>
         <task_description>Remedy the discrepancies listed in the Audit Results below</task_description>
         <template/>
         <threshold_count>5</threshold_count>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
-        <user display_value="Abel Tuter">62826bf03710200044e0bfc8bcbe5df1</user>
+        <user display_value="Abel Tuter (Architect)">62826bf03710200044e0bfc8bcbe5df1</user>
     </cert_instance>
 </record_update>

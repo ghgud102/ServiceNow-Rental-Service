@@ -29,26 +29,25 @@
         <source>192c9e001b201110b1d29cef034bcba0</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-02 23:47:50</sys_created_on>
         <sys_id>41a48b051ba4d510b1d29cef034bcbfd</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>181c1503c700000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-08-08 00:35:44</sys_updated_on>
         <type>Catalog Item Not Available for</type>
         <update_guid>01a48b05b9a4d510c984056992ace4fd</update_guid>
         <update_guid_history>01a48b05b9a4d510c984056992ace4fd:1788668105</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Rental Request.SNC External">49a4cb051ba4d510b1d29cef034bcb01</sys_audit_delete>
+        <sys_audit_delete display_value="">49a4cb051ba4d510b1d29cef034bcb01</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:18:41</sys_created_on>
         <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
         <sys_id>65ee4734ce904292acee56602b79c924</sys_id>
         <sys_metadata>99b705541b9851505e1184c6cc4bcbd5</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Rental Request.SNC External</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent/>
@@ -57,7 +56,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>sc_cat_item_user_criteria_no_mtom_99b705541b9851505e1184c6cc4bcbd5</sys_update_name>
         <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_99b705541b9851505e1184c6cc4bcbd5">41a48b051ba4d510b1d29cef034bcbfd</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:18:41</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

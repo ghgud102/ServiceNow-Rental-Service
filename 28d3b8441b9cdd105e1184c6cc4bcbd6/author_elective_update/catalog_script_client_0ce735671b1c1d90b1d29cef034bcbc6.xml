@@ -85,14 +85,13 @@
         <update_guid_history>7289a8e0ce6c9110afb1843bb04e0da3:-695821507,f55960e0c06c9110bab46736c89ddb1b:-207955348,90e8a4a0096c91109cb9047305756db9:405170463,b0a8ac60f86c9110f1a580aadc3c3106:-1724697984,aa686820226c9110191dc0a193c59236:507259823,c9a72cec552c9110ed54b17ef3787c22:-1966833982,a327e4ec972c9110e4fbfa35dd2c6636:-776740884,6bf6a0eca92c911075e9e237953bf1ef:-468653787,58c664ac542c91106d05f1ce1ac9fda8:-776740884,e07664aca62c9110f57afde92b09c43a:1039939861,2485282c5f2c9110c50458dd92b7c0ec:-776740884,2c6871a7511c1d906cfbe77440c7c646:-2061037166</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Set End date Catalog Version">90a48b051ba4d510b1d29cef034bcb62</sys_audit_delete>
+        <sys_audit_delete display_value="">90a48b051ba4d510b1d29cef034bcb62</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 05:18:38</sys_created_on>
         <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
         <sys_id>7e4726d31e954840a9eb2b1acebac100</sys_id>
         <sys_metadata>0ce735671b1c1d90b1d29cef034bcbc6</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Set End date Catalog Version</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent/>
@@ -101,7 +100,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>catalog_script_client_0ce735671b1c1d90b1d29cef034bcbc6</sys_update_name>
         <sys_update_version display_value="catalog_script_client_0ce735671b1c1d90b1d29cef034bcbc6">ba89a8e01b6c9110b1d29cef034bcba3</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 05:18:38</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

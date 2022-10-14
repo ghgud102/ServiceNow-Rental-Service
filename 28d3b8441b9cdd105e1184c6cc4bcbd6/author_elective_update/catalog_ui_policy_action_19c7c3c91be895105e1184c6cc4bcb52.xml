@@ -51,14 +51,13 @@
         <update_guid_history>15c7c3c90de8951047e8e07ee16d235b:-430085184,15c7c3c90de8951047e8e07ee16d235b:-430085184,d1c7c3c944e895108750c617afcbc255:-1918071793</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="site_address">bf4e83091b2c95105e1184c6cc4bcbed</sys_audit_delete>
+        <sys_audit_delete display_value="">bf4e83091b2c95105e1184c6cc4bcbed</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-07-06 06:00:55</sys_created_on>
         <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
         <sys_id>27c23d1664434bfc832a04527de67764</sys_id>
         <sys_metadata>19c7c3c91be895105e1184c6cc4bcb52</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>site_address</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent/>
@@ -67,7 +66,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>catalog_ui_policy_action_19c7c3c91be895105e1184c6cc4bcb52</sys_update_name>
         <sys_update_version display_value="catalog_ui_policy_action_19c7c3c91be895105e1184c6cc4bcb52">a0e9c3cd1be895105e1184c6cc4bcbf8</sys_update_version>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-07-06 06:00:55</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

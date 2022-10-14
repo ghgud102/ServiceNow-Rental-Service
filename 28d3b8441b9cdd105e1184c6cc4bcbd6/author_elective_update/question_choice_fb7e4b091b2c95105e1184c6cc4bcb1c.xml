@@ -46,14 +46,13 @@
         <update_guid_history>337e4b09b52c9510b9b771197b210e1f:-739163663</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Issue with networking">352017891be4d510b1d29cef034bcbea</sys_audit_delete>
+        <sys_audit_delete display_value="">352017891be4d510b1d29cef034bcbea</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>system</sys_created_by>
         <sys_created_on>2022-07-06 06:08:59</sys_created_on>
         <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
         <sys_id>3b4b6e1447f04b7dbd5bc461eaa203e9</sys_id>
         <sys_metadata>fb7e4b091b2c95105e1184c6cc4bcb1c</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Issue with networking</sys_name>
         <sys_package display_value="Rental Service" source="x_tigar_rental_ser">28d3b8441b9cdd105e1184c6cc4bcbd6</sys_package>
         <sys_parent display_value="">a77e4b091b2c95105e1184c6cc4bcb14</sys_parent>
@@ -62,7 +61,5 @@
         <sys_scope_delete display_value="">8a461674543747c8915becfecec855e4</sys_scope_delete>
         <sys_update_name>question_choice_fb7e4b091b2c95105e1184c6cc4bcb1c</sys_update_name>
         <sys_update_version display_value="question_choice_fb7e4b091b2c95105e1184c6cc4bcb1c">fb7e4b091b2c95105e1184c6cc4bcb1f</sys_update_version>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2022-07-06 06:08:59</sys_updated_on>
     </sys_metadata_delete>
 </record_update>
